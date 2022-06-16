@@ -1,38 +1,21 @@
 {
-  "name": "portfolio2",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@babel/parser": "^7.18.5",
+    "autoprefixer": "^10.4.7",
+    "css-blank-pseudo": "^3.0.3",
+    "css-has-pseudo": "^3.0.4",
+    "css-prefers-color-scheme": "^6.0.3",
+    "cssesc": "^3.0.0",
+    "detect-port-alt": "^1.1.6",
+    "ejs": "^3.1.8",
+    "is-docker": "^3.0.0",
+    "jsesc": "^3.0.2",
+    "json5": "^2.2.1",
+    "mime": "^3.0.0",
+    "nanoid": "^4.0.0",
+    "regjsparser": "^0.8.4",
+    "rollup": "^2.75.6",
+    "sass": "^1.52.3",
+    "which": "^2.0.2"
   }
 }
