@@ -15,3 +15,12 @@
         @content;
     }
 }
+
+@keyframes slide {
+    from {
+        width: 40vw;
+    }
+    to {
+        width: 23.8vw;
+    }
+}
