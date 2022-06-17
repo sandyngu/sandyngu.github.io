@@ -16,11 +16,14 @@
     }
 }
 
-@keyframes slide {
-    from {
-        width: 40vw;
-    }
+@keyframes line {
     to {
-        width: 23.8vw;
+        transform: rotate(225deg) translate(-1.13vw, -1.2vw);
+    }
+}
+
+@keyframes line2 {
+    to {
+        transform: rotate(-225deg) translate(-1.13vw, 0.85vw);
     }
 }

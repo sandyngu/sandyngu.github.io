@@ -23,27 +23,46 @@
             margin: 0;
             color: white;
             font-size: 40px;
+
         &-logo {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             padding: 15px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
         &-line {
+            position: relative;
             font-size: 25px;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
         }
         &--hover {
-            transform: rotate(90deg); 
-                        margin-top: 4.5%;
-                        transition: 0.2s ease;
-                        padding-bottom: 0; 
-            color: red;
+            transition: 2s ease-in-out;
+            color: grey;
+
+            &1 {
+                animation: 1s line;
+                animation-fill-mode: forwards;  
+                visibility: visible;
+                color: red;
+            }
+            &2 {
+                animation: 1s line2;
+                animation-fill-mode: forwards;  
+                color: red;
+            }
+             
         }
         &--hide {
             visibility: hidden;
+        }
+        &--show {
+            visibility: visible;
         }
     }
 }
