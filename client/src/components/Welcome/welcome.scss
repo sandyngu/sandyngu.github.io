@@ -1,1 +1,15 @@
 @import '../../partials/global';
+
+.welcome {
+    height: 50vw;
+    background-color: grey;
+    color: white;
+    margin: 0;
+
+    &__title {
+        margin: 0;
+    }
+    &__maintext {
+        width: 30%;
+    }
+}

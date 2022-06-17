@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderBar from '../HeaderBar/HeaderBar';
 import NavBar from '../NavBar/NavBar';
+import Welcome from '../Welcome/Welcome';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
@@ -76,6 +77,7 @@ class Home extends React.Component {
       <div className="home">
         <HeaderBar state={this.state} logoHover={this.logoHover}/>
         <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact}/>
+        <Welcome />
         <AboutMe state={this.state}/>
         <Projects state={this.state}/>
         <Contact state={this.state}/>
