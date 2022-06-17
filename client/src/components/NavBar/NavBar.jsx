@@ -6,9 +6,9 @@ function navbar() {
   return (
     <div className="navbar">
       <ul className="navbar__list">
-        <li className="navbar__list-item">about me</li>
-        <li className="navbar__list-item">projects</li>
-        <li className="navbar__list-item">contact</li>
+        <li className="navbar__list-item">&lt; about me /&gt;</li>
+        <li className="navbar__list-item">&lt; projects /&gt;</li>
+        <li className="navbar__list-item">&lt; contact /&gt;</li>
       </ul>
     </div>
   )

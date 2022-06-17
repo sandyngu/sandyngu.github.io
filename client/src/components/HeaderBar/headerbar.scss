@@ -8,6 +8,7 @@
     height: 120px;
     font-size: 3vw;
     display: flex;
+    background-color: $headergreen;
 
     &__logo {
         width: 130px;
@@ -19,10 +20,15 @@
     &__menu {
             width: 130px;
             height: 120px;
-            background-color: black;
+            background-color: $menublue;
             margin: 0;
             color: white;
             font-size: 40px;
+
+            &:hover {
+                cursor: pointer;
+                color: teal;
+            }
 
         &-logo {
             display: flex;
@@ -31,9 +37,7 @@
             justify-content: center;
             padding: 15px;
 
-            &:hover {
-                cursor: pointer;
-            }
+            
         }
         &-line {
             position: relative;
@@ -43,18 +47,15 @@
         }
         &--hover {
             transition: 2s ease-in-out;
-            color: grey;
 
             &1 {
-                animation: 1s line;
+                animation: 0.5s line;
                 animation-fill-mode: forwards;  
                 visibility: visible;
-                color: red;
             }
             &2 {
-                animation: 1s line2;
+                animation: 0.5s line2;
                 animation-fill-mode: forwards;  
-                color: red;
             }
              
         }
