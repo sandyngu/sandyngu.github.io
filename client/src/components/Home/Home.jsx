@@ -8,15 +8,77 @@ import './home.scss';
 
 class Home extends React.Component {
 
+  state={
+    hideMenu: true,
+    headerTitle: "sandy nguyen"
+  }
+
+  logoHover = () => {
+    if (this.state.hideMenu) {
+      this.setState({
+        hideMenu: false
+      })
+      document.querySelector('.headerbar__menu-line1').classList.add('headerbar__menu--hover1')
+      document.querySelector('.headerbar__menu-line2').classList.add('headerbar__menu--hide')
+      document.querySelector('.headerbar__menu-line3').classList.add('headerbar__menu--hover2')
+      document.querySelector('.navbar').style.display="block"
+    } else {
+      this.setState({
+        hideMenu: true
+      })
+      document.querySelector('.headerbar__menu-line1').classList.remove('headerbar__menu--hover1')
+      document.querySelector('.headerbar__menu-line2').classList.remove('headerbar__menu--hide')
+      document.querySelector('.headerbar__menu-line3').classList.remove('headerbar__menu--hover2')
+      document.querySelector('.navbar').style.display="none"
+    }
+  }
+
+  // changeHeaderBar = () => {
+  //   if (window.location.href.indexOf('aboutme') !== -1) {
+  //     this.setState({
+  //       headerTitle: "about me"
+  //     }) 
+  //   } else if (window.location.href.indexOf('projects') !== -1) {
+  //       this.setState({
+  //         headerTitle: "projects"
+  //       }) 
+  //     }
+  //     else if (window.location.href.indexOf('contact') !== -1) {
+  //       this.setState({
+  //         headerTitle: "contact"
+  //       }) 
+  //     } else {
+  //       this.setState({
+  //         headerTitle: "sandy nguyen"
+  //       }) 
+  //     }
+  // }
+
+  changeAboutMe = () => {
+    this.setState({
+      headerTitle: "about me"
+    })
+  }
+  changeProjects = () => {
+    this.setState({
+      headerTitle: "projects"
+    })
+  }
+  changeContact = () => {
+    this.setState({
+      headerTitle: "contact"
+    })
+  }
+
   render() {
 
     return (
-      <div classname="home">
-        <HeaderBar />
-        <NavBar />
-        <AboutMe />
-        <Projects />
-        <Contact />
+      <div className="home">
+        <HeaderBar state={this.state} logoHover={this.logoHover}/>
+        <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact}/>
+        <AboutMe state={this.state}/>
+        <Projects state={this.state}/>
+        <Contact state={this.state}/>
       </div>
     )
     

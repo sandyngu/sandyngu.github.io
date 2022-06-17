@@ -4,7 +4,7 @@ import './aboutme.scss';
 
 function AboutMe() {
   return (
-    <div>AboutMe</div>
+    <div className="aboutme" id="aboutme"></div>
   )
 }
 

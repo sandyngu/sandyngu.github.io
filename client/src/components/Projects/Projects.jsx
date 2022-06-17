@@ -3,7 +3,7 @@ import './projects.scss';
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className="projects" id="projects"></div>
   )
 }
 

@@ -1,5 +1,14 @@
 @import '../../partials/global';
 
+a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: red;
+    }
+}
+
 .navbar {
     width: 100%;
     height: 50px;

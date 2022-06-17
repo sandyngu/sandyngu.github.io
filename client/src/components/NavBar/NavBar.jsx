@@ -1,17 +1,17 @@
 import React from 'react';
 import './navbar.scss';
 
-function navbar() {
+function NavBar(props) {
 
   return (
     <div className="navbar">
       <ul className="navbar__list">
-        <li className="navbar__list-item">&lt; about me /&gt;</li>
-        <li className="navbar__list-item">&lt; projects /&gt;</li>
-        <li className="navbar__list-item">&lt; contact /&gt;</li>
+        <a href="#aboutme"><li className="navbar__list-item" onClick={()=>props.changeAboutMe()}>&lt; about me /&gt;</li></a>
+        <a href="#projects"><li className="navbar__list-item" onClick={()=>props.changeProjects()}>&lt; projects /&gt;</li></a>
+        <a href="#contact"><li className="navbar__list-item" onClick={()=>props.changeContact()}>&lt; contact /&gt;</li></a>
       </ul>
     </div>
   )
 }
 
-export default navbar;
+export default NavBar;
