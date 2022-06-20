@@ -6,10 +6,31 @@
     color: white;
     margin: 0;
 
+    &__section {
+        display: flex;
+
+        &-text {
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+            text-align: left;
+            position: relative;
+            top: 20vw;
+            left: 65%;
+            z-index: 0;
+        }
+    }
+
     &__title {
         margin: 0;
     }
     &__maintext {
-        width: 30%;
+
+        &-first {
+            color: red;
+        }
+        &-second {
+            color: turquoise;
+        }
     }
 }

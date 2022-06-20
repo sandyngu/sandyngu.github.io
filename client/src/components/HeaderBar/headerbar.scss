@@ -2,6 +2,7 @@
 
 .headerbar {
     position: sticky;
+    top: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -9,6 +10,7 @@
     font-size: 3vw;
     display: flex;
     background-color: $headergreen;
+    z-index: 999;
 
     &__logo {
         width: 130px;
@@ -18,17 +20,17 @@
         margin-right: auto;
     }
     &__menu {
-            width: 130px;
-            height: 120px;
-            background-color: $menublue;
-            margin: 0;
-            color: white;
-            font-size: 40px;
+        width: 130px;
+        height: 121px;
+        background-color: $menublue;
+        margin: 0;
+        color: white;
+        font-size: 40px;
 
-            &:hover {
-                cursor: pointer;
-                color: teal;
-            }
+        &:hover {
+            cursor: pointer;
+            color: teal;
+        }
 
         &-logo {
             display: flex;
