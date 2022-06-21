@@ -4,8 +4,6 @@ import './headerbar.scss';
 
 function HeaderBar(props) {
 
-  console.log(props.logoHover)
-
     return (
       <div className='headerbar'>
           <img src={Logo} className="headerbar__logo" alt="Logo"/>

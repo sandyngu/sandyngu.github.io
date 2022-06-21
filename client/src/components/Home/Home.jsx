@@ -15,6 +15,10 @@ class Home extends React.Component {
     headerTitle: "sandy nguyen"
   }
 
+  fadeMenu() {
+    document.querySelector('.navbar').classList.add('fade-in');
+  };
+
   logoHover = () => {
     if (this.state.hideMenu) {
       this.setState({
@@ -23,7 +27,9 @@ class Home extends React.Component {
       document.querySelector('.headerbar__menu-line1').classList.add('headerbar__menu--hover1')
       document.querySelector('.headerbar__menu-line2').classList.add('headerbar__menu--hide')
       document.querySelector('.headerbar__menu-line3').classList.add('headerbar__menu--hover2')
-      document.querySelector('.navbar').style.display="block"
+      // document.querySelector('.navbar').style.display="block"
+      document.querySelector('.navbar').classList.add('fade-in');
+      document.querySelector('.navbar').classList.remove('fade-out');
     } else {
       this.setState({
         hideMenu: true
@@ -31,8 +37,11 @@ class Home extends React.Component {
       document.querySelector('.headerbar__menu-line1').classList.remove('headerbar__menu--hover1')
       document.querySelector('.headerbar__menu-line2').classList.remove('headerbar__menu--hide')
       document.querySelector('.headerbar__menu-line3').classList.remove('headerbar__menu--hover2')
-      document.querySelector('.navbar').style.display="none"
+      document.querySelector('.navbar').classList.remove('fade-in');
+      document.querySelector('.navbar').classList.add('fade-out');
+      // document.querySelector('.navbar').style.display="none"
     }
+    setTimeout(1000,this.fadeMenu())
   }
 
   // changeHeaderBar = () => {

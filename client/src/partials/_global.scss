@@ -22,3 +22,9 @@ h2 {
 p {
     font-size: 1.2vw;
 }
+
+.rainbow {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(180, 180, 21), orange, red);
+    background-clip: text;
+    color: transparent;
+  }

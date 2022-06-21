@@ -1,11 +1,49 @@
 @import '../../partials/global';
 
 .aboutme {
-    height: 40vw;
-    background-color: lightgrey;
+    height: 100vw;
+    background-color: rgb(182, 204, 226);
     margin: 0;
 
     &__heading {
+        padding: 20vw 0 0 8vw;
         margin: 0;
+        text-align: left;
     }
+    &__section {
+        position: absolute;
+        display: flex;
+    }
+    &__text {
+        width: 35%;
+        font-weight: bold;
+        font-size: 1.4vw;
+        margin-left: 8vw;
+        text-align: left;
+
+        &2 {
+            margin-top: 45vw;
+            margin-left: 7vw;
+            width: 41%;
+        }
+    }
+    &--bold {
+        font-family:'GraphikMedium';
+    }
+}
+
+.valorant {
+    font-family: 'Valorant';
+    color: #ff4655;
+}
+.lostark {
+    width: 9vw;
+    position: relative;
+    top: 0.75vw;
+}
+.covid {
+    color: $orangered;
+}
+.white {
+    color: white;
 }
