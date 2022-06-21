@@ -3,7 +3,8 @@ import './welcome.scss';
 
 function Welcome() {
   return (
-    <div className="welcome">
+    <div className="welcome section" id="welcome">
+        <p className="title" style={{display: 'none'}}>sandy nguyen</p>
         <div className="welcome__section">
             <div className="welcome__section-text">
                 <h1 className="welcome__title">welcome.</h1>

@@ -3,7 +3,9 @@ import './projects.scss';
 
 function Projects() {
   return (
-    <div className="projects" id="projects"></div>
+    <div className="projects section" id="projects">
+      <p className="title" style={{display: 'none'}}>projects</p>
+    </div>
   )
 }
 

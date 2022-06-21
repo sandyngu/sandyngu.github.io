@@ -4,7 +4,9 @@ import './aboutme.scss';
 
 function AboutMe() {
   return (
-    <div className="aboutme" id="aboutme"></div>
+    <div className="aboutme section" id="aboutme">
+      <p className="title" style={{display: 'none'}}>about me</p>
+    </div>
   )
 }
 

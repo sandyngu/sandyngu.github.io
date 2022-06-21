@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import HeaderBar from '../HeaderBar/HeaderBar';
 import NavBar from '../NavBar/NavBar';
 import Welcome from '../Welcome/Welcome';
@@ -71,8 +72,28 @@ class Home extends React.Component {
     })
   }
 
-  render() {
+  componentDidMount() {
 
+    $(window).on('load', function () {
+      $(window).on("scroll resize", function () {
+        var pos = $('#header').offset();
+        $('.section').each(function () {
+            if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
+                $('#header').html($(this).find('.title').text()); //or any other way you want to get the date
+                return; //break the loop
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $(window).trigger('scroll'); // init the value
+    });
+  });
+  
+  }
+  
+  render() {
+    
     return (
       <div className="home">
         <HeaderBar state={this.state} logoHover={this.logoHover}/>
