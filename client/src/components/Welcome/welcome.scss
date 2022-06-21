@@ -3,7 +3,7 @@
 .welcome {
     height: 50vw;
     color: white;
-    background-image: linear-gradient(to right, rgb(243, 247, 245), $headergreen);
+    background-image: linear-gradient(to right, $headergreen,rgb(13, 45, 53), );
     margin: 0;
 
     &__section {
@@ -19,20 +19,25 @@
             top: 20vw;
             left: 65%;
             z-index: 0;
+            color: white;
         }
     }
 
     &__title {
-        color: black;
+        background-image: linear-gradient(60deg,black, black );
+        background-clip: text;
+        color: transparent;
         margin: 0;
     }
     &__maintext {
 
         &-first {
-            color: red;
+            color: $orangered;
+            font-weight: bold;
         }
         &-second {
-            color: turquoise;
+            color: $greenblue;
+            font-weight: bold;
         }
     }
 }
