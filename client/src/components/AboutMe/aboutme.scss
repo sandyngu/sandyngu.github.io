@@ -6,6 +6,10 @@
     margin: 0;
 
     &__heading {
+        background-image: url('../../assets/images/aot2.gif');
+        background-position: 20% 30%;
+        background-clip: text;
+        color: transparent;
         padding: 20vw 0 0 8vw;
         margin: 0;
         text-align: left;
@@ -41,9 +45,4 @@
     position: relative;
     top: 0.75vw;
 }
-.red {
-    color: $orangered;
-}
-.green {
-    color: $greenblue;
-}
+

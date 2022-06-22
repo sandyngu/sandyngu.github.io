@@ -31,7 +31,8 @@
     }
 
     &__title {
-        background-image: linear-gradient(60deg,white, white);
+        background-image: url('../../assets/images/flower3.gif');
+        background-position: bottom;
         background-clip: text;
         color: transparent;
         margin: 0;

@@ -3,4 +3,12 @@
 .contact {
     height: 40vw;
     background-color: lightgrey;
+
+    &__heading {
+        background-image: url('../../assets/images/sora.gif');
+        background-size: 40%;
+        background-position: 52% 40%;
+        background-clip: text;
+        color: transparent;
+    }
 }
