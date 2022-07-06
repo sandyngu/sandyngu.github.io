@@ -1,16 +1,16 @@
 @import '../../partials/global';
 
 .projects {
-    height: 65vw;
+    height: 70vw;
     background-color: lightslategrey;
 
     &__heading {
         background-image: url('../../assets/images/appa2a.gif');
         background-size: 43%;
-        background-position: 38% 70%;
+        background-position: 37.75% 65%;
         background-clip: text;
         color: transparent;
-        padding: 10vw 0;
+        padding: 12vw 0;
         margin: 0;
     }
 }

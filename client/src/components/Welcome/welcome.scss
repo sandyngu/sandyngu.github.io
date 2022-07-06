@@ -7,6 +7,11 @@
     // background-image: linear-gradient(to right, $headergreen,rgb(13, 45, 53), );
     margin: 0;
 
+    &__image {
+        width: 40%;
+        margin-top: 2%;
+    }
+
     &__flower {
         position: relative;
         top: 15vw;
@@ -23,8 +28,8 @@
             width: 30%;
             text-align: left;
             position: relative;
-            top: 20vw;
-            left: 65%;
+            top: 16vw;
+            left: 20%;
             z-index: 0;
             color: white;
         }
@@ -38,6 +43,7 @@
         margin: 0;
     }
     &__maintext {
+        margin-top: -55%;
 
         &-first {
             color: $orangered;

@@ -6,6 +6,7 @@ import Welcome from '../Welcome/Welcome';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import './home.scss';
 
 class Home extends React.Component {
@@ -43,27 +44,6 @@ class Home extends React.Component {
     }
     setTimeout(1000,this.fadeMenu())
   }
-
-  // changeHeaderBar = () => {
-  //   if (window.location.href.indexOf('aboutme') !== -1) {
-  //     this.setState({
-  //       headerTitle: "about me"
-  //     }) 
-  //   } else if (window.location.href.indexOf('projects') !== -1) {
-  //       this.setState({
-  //         headerTitle: "projects"
-  //       }) 
-  //     }
-  //     else if (window.location.href.indexOf('contact') !== -1) {
-  //       this.setState({
-  //         headerTitle: "contact"
-  //       }) 
-  //     } else {
-  //       this.setState({
-  //         headerTitle: "sandy nguyen"
-  //       }) 
-  //     }
-  // }
 
   changeAboutMe = () => {
     this.setState({
@@ -111,6 +91,7 @@ class Home extends React.Component {
         <AboutMe state={this.state}/>
         <Projects state={this.state}/>
         <Contact state={this.state}/>
+        <Footer state={this.state}/>
       </div>
     )
     

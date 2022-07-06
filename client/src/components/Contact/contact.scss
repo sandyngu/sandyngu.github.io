@@ -1,7 +1,7 @@
 @import '../../partials/global';
 
 .contact {
-    height: 40vw;
+    height: 100vw;
     background-color: lightgrey;
 
     &__heading {
@@ -10,5 +10,6 @@
         background-position: 52% 40%;
         background-clip: text;
         color: transparent;
+        margin: 0;
     }
 }

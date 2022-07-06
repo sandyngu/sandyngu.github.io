@@ -10,9 +10,26 @@
         background-position: 20% 30%;
         background-clip: text;
         color: transparent;
-        padding: 20vw 0 0 8vw;
+        padding: 15vw 0 0 8vw;
         margin: 0;
         text-align: left;
+    }
+    &__image {
+        position: absolute;
+
+        &1 {
+            width: 50%;
+            height: 45%;
+            left: 0;
+            top: 170%;
+        }
+        &2 {
+            width: 45%;
+            height: 35%;
+            right: 9%;
+            top: 248%;
+        }
+
     }
     &__section {
         position: absolute;
@@ -21,14 +38,12 @@
     &__text {
         width: 35%;
         font-weight: bold;
-        font-size: 1.4vw;
         margin-left: 8vw;
         text-align: left;
 
         &2 {
             margin-top: 45vw;
-            margin-left: 7vw;
-            width: 41%;
+            width: 37%;
         }
     }
     &--bold {
