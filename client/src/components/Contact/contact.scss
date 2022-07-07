@@ -17,21 +17,53 @@
         margin-top: 39vw;
     }
     &__button {
-        background-image: url('../../assets/images/border.png');
-        background-color: lightslategrey;
+        background-image: url('../../assets/images/abstract.jpg');
+        filter: grayscale(65%);
+        opacity: 0.8;
+        background-color: rgb(174, 191, 207);
         color: white;
         border-radius: 25px;
-        background-size: 100%;
+        background-size: 105%;
+        background-position: 90%;
         width: 20vw;
-        height: 15vw;
+        height: 17vw;
         margin: 7vw 2vw;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            filter: grayscale(50%);
+        }
+
+        &-text {
+            font-size: 4vw;
+            margin-top: -20vw;
+            background-color: rgb(65, 58, 58);
+            display: none;
+            font-family: 'Kintanya';
+            padding: 1vw 2vw;
+            transition: ease-in-out 2s;
+        }
 
         &-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: 0vw 10vw;
+            margin: 0 10vw;
             padding-top: 13vw;
         }
+
+        &-logo {
+            width: 6vw;
+            margin-top: 4vw;
+        }
     }
+}
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
 }
