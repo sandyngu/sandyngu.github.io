@@ -67,4 +67,13 @@
             visibility: visible;
         }
     }
+    &__image {
+
+        &-container {
+            position: absolute;
+            top: 1;
+            margin-top: 11vw;
+            display: flex;
+        }
+    }
 }

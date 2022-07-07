@@ -14,7 +14,7 @@
         position: absolute;
         right: 7%;
         top: 1;
-        margin-top: 39vw;
+        margin-top: 40vw;
     }
     &__button {
         background-image: url('../../assets/images/abstract.jpg');
@@ -41,8 +41,7 @@
             background-color: rgb(65, 58, 58);
             display: none;
             font-family: 'Kintanya';
-            padding: 1vw 2vw;
-            transition: ease-in-out 2s;
+            padding: 0.5vw 2vw;
         }
 
         &-container {
@@ -55,8 +54,17 @@
 
         &-logo {
             width: 6vw;
-            margin-top: 4vw;
+            margin-top: 4.5vw;
         }
+    }
+
+    &__image {
+        width: 20%;
+        position: absolute;
+        top: 1;
+        margin-top: 33vw;
+        left: 35%;
+        transform: scaleX(-1);
     }
 }
 

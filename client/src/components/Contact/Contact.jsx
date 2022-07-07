@@ -4,6 +4,7 @@ import LinkedIn from '../../assets/images/linkedin.png'
 import Email from '../../assets/images/email.png'
 import GitHub from '../../assets/images/github.png'
 import Resume from '../../assets/images/resume.png'
+import Tulip from '../../assets/images/tulip.png'
 import './contact.scss';
 
 function Contact() {
@@ -44,6 +45,7 @@ function Contact() {
     <div className="contact section" id="contact">
         <p className="title" style={{display: 'none'}}>contact</p>
         <h2 className="contact__heading">connect with me.</h2>
+        <img src={Tulip} className="contact__image" alt="Tulip"/>
         <div className="contact__button-container">
           <a href="https://www.linkedin.com/in/sandyngu/" target="_blank" rel="noreferrer">
             <div className="contact__button contact__button1" onMouseOver={()=>showLinkedIn()} onMouseLeave={()=>hideLinkedIn()}>
