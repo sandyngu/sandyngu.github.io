@@ -1,5 +1,5 @@
 import React from 'react';
-import Flowers from '../../assets/images/flowers1.png';
+import Flowers from '../../assets/images/flowers3.png';
 import './welcome.scss';
 
 function Welcome() {

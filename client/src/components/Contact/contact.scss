@@ -6,10 +6,32 @@
 
     &__heading {
         background-image: url('../../assets/images/sora.gif');
-        background-size: 40%;
+        background-size: 75%;
         background-position: 52% 40%;
         background-clip: text;
         color: transparent;
         margin: 0;
+        position: absolute;
+        right: 7%;
+        top: 1;
+        margin-top: 39vw;
+    }
+    &__button {
+        background-image: url('../../assets/images/border.png');
+        background-color: lightslategrey;
+        color: white;
+        border-radius: 25px;
+        background-size: 100%;
+        width: 20vw;
+        height: 15vw;
+        margin: 7vw 2vw;
+
+        &-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0vw 10vw;
+            padding-top: 13vw;
+        }
     }
 }

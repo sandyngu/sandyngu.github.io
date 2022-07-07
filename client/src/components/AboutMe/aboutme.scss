@@ -18,16 +18,18 @@
         position: absolute;
 
         &1 {
-            width: 50%;
-            height: 45%;
+            width: 50vw;
+            height: 21vw;
             left: 0;
-            top: 170%;
+            top: 1;
+            margin-top: 28vw;
         }
         &2 {
-            width: 45%;
-            height: 35%;
+            width: 45vw;
+            height: 18vw;
             right: 9%;
-            top: 248%;
+            top: 1;
+            margin-top: 69vw;
         }
 
     }
