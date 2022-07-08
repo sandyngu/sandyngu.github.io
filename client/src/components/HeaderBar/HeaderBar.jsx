@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import Logo from '../../assets/images/logo.png'
 import FlowerBorder from '../../assets/images/flowerborder.png'
 import './headerbar.scss';
@@ -20,7 +21,6 @@ function HeaderBar(props) {
                   <div className="headerbar__menu-line headerbar__menu-line3">———</div>
               </div>
           </div>
-          {/* <div id='header'>hello</div> */}
       </div>
     )
 }

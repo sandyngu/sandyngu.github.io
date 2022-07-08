@@ -17,28 +17,45 @@
         margin-top: 40vw;
     }
     &__button {
-        background-image: url('../../assets/images/abstract.jpg');
-        filter: grayscale(65%);
-        opacity: 0.8;
+        background-repeat: no-repeat;
+        background-size: 100% 71%;
+        background-position: center;
+        filter: grayscale(60%);
+        opacity: 0.9;
         background-color: rgb(174, 191, 207);
         color: white;
         border-radius: 25px;
-        background-size: 105%;
-        background-position: 90%;
         width: 20vw;
         height: 17vw;
         margin: 7vw 2vw;
 
+        &1 {
+            background-image: url('../../assets/images/network.jpg');
+        }
+        &2 {
+            background-image: url('../../assets/images/email2.jpg');
+        }
+        &3 {
+            background-image: url('../../assets/images/github2.jpg');
+        }
+        &4 {
+            background-image: url('../../assets/images/resume2.png');
+        }
+
         &:hover {
-            opacity: 1;
+            opacity: 1.2;
             cursor: pointer;
             filter: grayscale(50%);
         }
 
+        &-logo {
+            width: 6vw;
+            margin-top: 5.5vw;
+        }
         &-text {
             font-size: 4vw;
             margin-top: -20vw;
-            background-color: rgb(65, 58, 58);
+            background-color: rgba(65, 58, 58, 0.8);
             display: none;
             font-family: 'Kintanya';
             padding: 0.5vw 2vw;
@@ -52,10 +69,6 @@
             padding-top: 13vw;
         }
 
-        &-logo {
-            width: 6vw;
-            margin-top: 4.5vw;
-        }
     }
 
     &__image {
