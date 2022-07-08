@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import Logo from '../../assets/images/logo.png'
 import FlowerBorder from '../../assets/images/flowerborder.png'
 import './headerbar.scss';

@@ -11,10 +11,6 @@
         background-clip: text;
         color: transparent;
         margin: 0;
-        position: absolute;
-        right: 7%;
-        top: 1;
-        margin-top: 40vw;
     }
     &__button {
         background-repeat: no-repeat;
@@ -41,6 +37,9 @@
         &4 {
             background-image: url('../../assets/images/resume2.png');
         }
+        &5 {
+            background-image: url('../../assets/images/socialmedia.png');
+        }
 
         &:hover {
             opacity: 1.2;
@@ -51,14 +50,17 @@
         &-logo {
             width: 6vw;
             margin-top: 5.5vw;
+            opacity: 0.7;
         }
         &-text {
             font-size: 4vw;
-            margin-top: -20vw;
+            margin-top: -2vw;
             background-color: rgba(65, 58, 58, 0.8);
             display: none;
             font-family: 'Kintanya';
-            padding: 0.5vw 2vw;
+            padding: 0 2vw;
+            width: 80%;
+            text-align: center;
         }
 
         &-container {
@@ -78,6 +80,17 @@
         margin-top: 33vw;
         left: 35%;
         transform: scaleX(-1);
+    }
+    &__container {
+        display: flex;
+        position: absolute;
+        right: 7%;
+        top: 1;
+        margin-top: 40vw;
+        justify-content: space-between;
+    }
+    &__arrow {
+        width: 10%;
     }
 }
 

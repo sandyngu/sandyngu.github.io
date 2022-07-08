@@ -24,7 +24,7 @@ p {
 }
 
 .rainbow {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(180, 180, 21), orange, red);
+    background-image: linear-gradient(to left, rgb(241, 189, 241), rgb(182, 116, 230), rgb(138, 162, 238), rgb(157, 218, 157), rgb(243, 226, 128), rgb(241, 182, 70), rgb(247, 115, 115));
     background-clip: text;
     color: transparent;
 }
@@ -41,4 +41,7 @@ p {
 }
 .highlight {
     color: $headergreen;
+}
+.bold {
+    font-weight: bold;
 }

@@ -8,13 +8,7 @@
 
     &__image {
         width: 35%;
-        margin-top: 10vw;
-    }
-
-    &__flower {
-        position: relative;
-        top: 15vw;
-        left: 60vw;
+        margin-top: 33.45vw;
     }
 
     &__section {
@@ -36,16 +30,16 @@
 
     &__title {
         background-image: url('../../assets/images/flower3.gif');
-        background-position: bottom;
+        background-position: 10% 70%;
         background-clip: text;
         color: transparent;
         margin: 0;
     }
     &__maintext {
-        margin-top: -17vw;
+        margin-top: -29vw;
 
         &-first {
-            color: $orangered;
+            color: rgb(206, 114, 78);
             font-weight: bold;
         }
         &-second {

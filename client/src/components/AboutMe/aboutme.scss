@@ -5,6 +5,15 @@
     background-color: rgb(182, 204, 226);
     margin: 0;
 
+    &__flowers {
+        width: 35%;
+        top: 1;
+        margin-top: 83.45vw;
+        position: absolute;
+        right: 0;
+        transform: scaleX(-1);
+    }
+
     &__heading {
         background-image: url('../../assets/images/aot2.gif');
         background-position: 20% 30%;
@@ -46,6 +55,7 @@
         &2 {
             margin-top: 45vw;
             width: 37%;
+            font-weight: bold;
         }
     }
     &--bold {
@@ -57,9 +67,9 @@
     font-family: 'Valorant';
 }
 
-.lostark {
-    width: 9vw;
-    position: relative;
-    top: 0.75vw;
+.outline {
+    font-family: 'College Halo';
+    font-size: 6.5vw;
+    font-weight: normal;
 }
 
