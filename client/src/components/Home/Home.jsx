@@ -31,6 +31,7 @@ class Home extends React.Component {
       // document.querySelector('.navbar').style.display="block"
       document.querySelector('.navbar').classList.add('fade-in');
       document.querySelector('.navbar').classList.remove('fade-out');
+      document.querySelector('.headerbar__menu').style.zIndex=999;
     } else {
       this.setState({
         hideMenu: true
@@ -41,6 +42,7 @@ class Home extends React.Component {
       document.querySelector('.navbar').classList.remove('fade-in');
       document.querySelector('.navbar').classList.add('fade-out');
       // document.querySelector('.navbar').style.display="none"
+      document.querySelector('.headerbar__menu').style.zIndex=-1;
     }
     setTimeout(1000,this.fadeMenu())
   }
@@ -88,8 +90,11 @@ class Home extends React.Component {
         <HeaderBar state={this.state} logoHover={this.logoHover}/>
         <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact}/>
         <Welcome />
+        <div className="parallax parallax1"></div>
         <AboutMe state={this.state}/>
+        <div className="parallax parallax2"></div>
         <Projects state={this.state}/>
+        <div className="parallax parallax3"></div>
         <Contact state={this.state}/>
         <Footer state={this.state}/>
       </div>

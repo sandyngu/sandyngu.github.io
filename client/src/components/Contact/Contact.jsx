@@ -98,7 +98,7 @@ function Contact() {
           <a href="https://instagram.com/sandyngu" target="_blank" rel="noreferrer">
             <div className="contact__button contact__button5" onMouseOver={()=>showSocialMedia()} onMouseLeave={()=>hideSocialMedia()}>
                 <img src={Insta} className="contact__button-logo contact__button-logo5" alt="Instagram Logo" />
-                <br/><div className="contact__button-text contact__button-text5">@sandyngu</div>
+                <br/><div className="contact__button-text contact__button-text5">socials</div>
             </div>
           </a>
             <div className="contact__button">

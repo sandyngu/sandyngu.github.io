@@ -3,7 +3,8 @@
 .welcome {
     height: 50vw;
     color: white;
-    background-color: rgb(66, 87, 107);
+    background-color: rgba(66, 87, 107, 0.8);
+    background-color: rgba(59, 75, 94, 0.8);
     margin: 0;
 
     &__image {
@@ -39,7 +40,7 @@
         margin-top: -29vw;
 
         &-first {
-            color: rgb(206, 114, 78);
+            color: $fadedorange;
             font-weight: bold;
         }
         &-second {

@@ -2,7 +2,8 @@
 
 .aboutme {
     height: 100vw;
-    background-color: rgb(182, 204, 226);
+    // background-color: rgb(182, 204, 226,1);
+    background-color: rgba(231, 242, 252, 0.8);
     margin: 0;
 
     &__flowers {
@@ -38,7 +39,7 @@
             height: 18vw;
             right: 9%;
             top: 1;
-            margin-top: 69vw;
+            margin-top: 73.75vw;
         }
 
     }
@@ -48,13 +49,13 @@
     }
     &__text {
         width: 35%;
-        font-weight: bold;
         margin-left: 8vw;
         text-align: left;
+        font-weight: bolder;
 
         &2 {
             margin-top: 45vw;
-            width: 37%;
+            width: 37.5%;
             font-weight: bold;
         }
     }
@@ -65,6 +66,18 @@
 
 .valorant {
     font-family: 'Valorant';
+
+    &:hover {
+        color: $fadedorange;
+    }
+}
+
+.league {
+    color: black;
+
+    &:hover {
+        color: $fadedorange;
+    }
 }
 
 .outline {

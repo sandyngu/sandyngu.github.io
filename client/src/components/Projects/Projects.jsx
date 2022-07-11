@@ -7,7 +7,7 @@ function Projects() {
     <div className="projects section" id="projects">
         <p className="title" style={{display: 'none'}}>projects</p>
         <h2 className="projects__heading">things i've made.</h2>
-        <img src={Flowers} alt="Flowers" className="projects__flowers"/>
+        <img src={Flowers} alt="Flowers" className="projects__flowers flowers"/>
     </div>
   )
 }
