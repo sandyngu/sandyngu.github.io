@@ -51,17 +51,18 @@
             color: white;
             font-weight: normal;
             border: 1px white solid;
-            width: 40%;
+            width: 25%;
             opacity: 0.5;
             position: absolute;   
             top: 1;
             padding-top: 1.5vw;
-            margin-top: 11.5vw;
-            left: 29.5vw;     
+            margin-top: 12vw;
+            left: 36.5vw;     
             font-family: 'Antically';   
             vertical-align: middle;  
-            line-height: 8vw;
+            line-height: 5vw;
             border-radius: 0.25vw;
+            font-size: 3vw;
 
             &2 {
                 border: none;
@@ -72,12 +73,12 @@
         }
         &-box {
             border: 1px white solid;
-            width: 38.4%;
-            height: 8vw;
+            width: 26%;
+            height: 7.75vw;
             position: absolute;   
             top: 1;
-            margin-top: 12.25vw;
-            left: 30.25vw;   
+            margin-top: 11.35vw;
+            left: 36vw;   
             opacity: 0.5;
             border-radius: 0.25vw;
         }

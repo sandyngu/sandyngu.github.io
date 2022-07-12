@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import axios from 'axios';
 import HeaderBar from '../HeaderBar/HeaderBar';
 import NavBar from '../NavBar/NavBar';
 import Welcome from '../Welcome/Welcome';
@@ -13,8 +14,46 @@ class Home extends React.Component {
 
   state={
     hideMenu: true,
-    headerTitle: "sandy nguyen"
+    headerTitle: "sandy nguyen",
+    projects:[],
+    comments:[]
   }
+
+  componentDidMount() {
+    // axios.get('/')
+    //     .then(res => {
+    //         console.log(res.data)
+    //         this.setState({
+    //             projects: res.data
+    //         });
+    //     })
+    //     .catch(err => console.log(err))
+    axios.get('http://localhost:5000/comments')
+        .then(res => {
+            console.log(res.data)
+            this.setState({
+                comments: res.data
+            });
+            console.log(this.state.comments)
+        })
+        .catch(err => console.log(err))
+
+        $(window).on('load', function () {
+          $(window).on("scroll resize", function () {
+            var pos = $('#header').offset();
+            $('.section').each(function () {
+                if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
+                    $('#header').html($(this).find('.title').text()); //or any other way you want to get the date
+                    return; //break the loop
+                }
+            });
+        });
+    
+        $(document).ready(function () {
+            $(window).trigger('scroll'); // init the value
+        });
+      });
+  };
 
   fadeMenu() {
     document.querySelector('.navbar').classList.add('fade-in');
@@ -61,26 +100,6 @@ class Home extends React.Component {
     this.setState({
       headerTitle: "contact"
     })
-  }
-
-  componentDidMount() {
-
-    $(window).on('load', function () {
-      $(window).on("scroll resize", function () {
-        var pos = $('#header').offset();
-        $('.section').each(function () {
-            if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
-                $('#header').html($(this).find('.title').text()); //or any other way you want to get the date
-                return; //break the loop
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $(window).trigger('scroll'); // init the value
-    });
-  });
-  
   }
   
   render() {
