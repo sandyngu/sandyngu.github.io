@@ -13,6 +13,7 @@
         position: absolute;
         right: 0;
         transform: scaleX(-1);
+        z-index: 998;
     }
 
     &__heading {
@@ -68,7 +69,8 @@
                 border: none;
                 opacity: 0.8;
                 margin-top: 13.5vw;
-                left: 38vw;
+                left: 44vw;
+                font-size: 2vw;
             }
         }
         &-box {

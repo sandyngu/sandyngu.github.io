@@ -32,21 +32,12 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -99.3vw;
+            margin-top: -16.05vw;
+            fill: rgba(96, 114, 133, 1);
          }
          &2 {
             margin-top: 30vw;
+            fill:rgba(231, 242, 252, 1);
          }
-
-        &-svg {
-            stroke: none; 
-            fill:rgba(231, 242, 252, 1) ;
-
-            &1 {
-                stroke: none; 
-                fill: rgba(96, 114, 133, 1);
-                height: 5vw;
-            }
         }
-    }
 }

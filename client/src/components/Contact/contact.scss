@@ -109,22 +109,14 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -99.3vw;
+            margin-top: -16vw;
+            fill: rgba(211, 211, 211, 1);
          }
          &2 {
             margin-top: 30vw;
-         }
-
-        &-svg {
-            stroke: none; 
             fill: rgba(96, 114, 133, 1);
-
-            &1 {
-                stroke: none; 
-                fill: rgba(211, 211, 211, 1) ;
-            }
+         }
         }
-    }
 }
 
 .show {

@@ -14,14 +14,14 @@ function Welcome() {
             </div>
         </div>
         <div className="welcome__wave welcome__wave1">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
-            <path className="welcome__wave-svg welcome__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
-          </svg>
+            <svg viewBox="0 60 500 80">             
+              <path classname="welcome__wave-svg welcome__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>           
+            </svg>
         </div>
         <div className="welcome__wave welcome__wave2">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
-            <path className="welcome__wave-svg welcome__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
-          </svg>
+            <svg viewBox="0 60 500 80">             
+              <path classname="welcome__wave-svg welcome__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>           
+            </svg>
         </div>
     </div>
   )

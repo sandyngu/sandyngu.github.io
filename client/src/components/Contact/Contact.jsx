@@ -66,12 +66,12 @@ function Contact() {
     <div className="section" id="contact">
         <p className="title" style={{display: 'none'}}>contact</p>
         <div className="contact__wave contact__wave1">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+          <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
             <path className="contact__wave-svg contact__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
           </svg>
         </div>
         <div className="contact__wave contact__wave2">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+          <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
             <path className="contact__wave-svg contact__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
           </svg>
         </div>

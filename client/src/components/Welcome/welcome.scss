@@ -9,6 +9,7 @@
     &__image {
         width: 35%;
         margin-top: 56.5vw;
+        z-index: 998;
     }
 
     &__section {
@@ -61,22 +62,12 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -145.5vw;
+            margin-top: -62.3vw;
+            fill: rgba(231, 242, 252, 1);
          }
          &2 {
             margin-top: -16.2vw;
-         }
-
-        &-svg {
-            stroke: none; 
             fill: rgba(59, 75, 94, 1);
-            margin-top: 15vw;
-
-            &1 {
-                stroke: none; 
-                fill: rgba(231, 242, 252, 1);
-                margin-top: 15vw;
-            }
-        }
+         }
     }
 }

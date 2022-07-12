@@ -6,12 +6,12 @@ function Projects() {
   return (
     <div className="section" id="projects">
         <div className="projects__wave projects__wave1">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+          <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
             <path className="projects__wave-svg projects__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
           </svg>
         </div>
         <div className="projects__wave projects__wave2">
-          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+          <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
             <path className="projects__wave-svg projects__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
           </svg>
         </div>
