@@ -65,6 +65,16 @@ function Contact() {
   return (
     <div className="section" id="contact">
         <p className="title" style={{display: 'none'}}>contact</p>
+        <div className="contact__wave contact__wave1">
+          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+            <path className="contact__wave-svg contact__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
+          </svg>
+        </div>
+        <div className="contact__wave contact__wave2">
+          <svg viewBox="0 60 500 500" preserveAspectRatio="xMinYMin meet">
+            <path className="contact__wave-svg contact__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
+          </svg>
+        </div>
         <div className="parallax parallax4">
             <h2 className="aboutme__section-title aboutme__section-title1">get in touch</h2>
             <div className="aboutme__section-box"></div>

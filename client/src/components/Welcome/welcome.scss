@@ -53,6 +53,7 @@
     }
     &__wave {
         margin-top: -16vw;
+        position: absolute;
         transform: scaleX(-1);
         z-index: 0;
         width: 100%;
@@ -62,7 +63,7 @@
             margin-top: -145.5vw;
          }
          &2 {
-            margin-top: 30vw;
+            margin-top: -16.2vw;
          }
 
         &-svg {

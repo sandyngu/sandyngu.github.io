@@ -18,11 +18,12 @@
     &__flowers {
         width: 35%;
         top: 1;
-        margin-top: 51vw;
+        margin-top: 55vw;
         position: absolute;
         left: 0;
     }
     &__wave {
+        position: absolute;
         margin-top: -16vw;
         transform: scaleX(-1);
         z-index: 0;
@@ -30,7 +31,7 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -204.3vw;
+            margin-top: -99.3vw;
          }
          &2 {
             margin-top: 30vw;
@@ -43,6 +44,7 @@
             &1 {
                 stroke: none; 
                 fill: rgba(96, 114, 133, 1);
+                height: 5vw;
             }
         }
     }
