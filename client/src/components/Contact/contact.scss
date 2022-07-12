@@ -7,7 +7,7 @@
     &__heading {
         background-image: url('../../assets/images/sora.gif');
         background-size: 75%;
-        background-position: 52% 40%;
+        background-position: 53%;
         background-clip: text;
         color: transparent;
         margin: 0;
@@ -91,13 +91,14 @@
     &__container {
         display: flex;
         position: absolute;
+        align-items: center;
         right: 7%;
         top: 1;
-        margin-top: 41vw;
-        justify-content: space-between;
+        margin-top: 39.5vw;
     }
     &__arrow {
         width: 10%;
+        padding: 0 20vw;
     }
 }
 

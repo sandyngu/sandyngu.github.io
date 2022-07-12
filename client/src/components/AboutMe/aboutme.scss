@@ -39,7 +39,7 @@
             height: 18vw;
             right: 9%;
             top: 1;
-            margin-top: 106.5vw;
+            margin-top: 104.5vw;
         }
 
     }
@@ -50,12 +50,36 @@
         &-title {
             color: white;
             font-weight: normal;
-            border: 1px white double;
+            border: 1px white solid;
             width: 40%;
-            margin: auto;
-            padding: 1vw 3vw;
-            opacity: 0.7;
-            
+            opacity: 0.5;
+            position: absolute;   
+            top: 1;
+            padding-top: 1.5vw;
+            margin-top: 11.5vw;
+            left: 29.5vw;     
+            font-family: 'Antically';   
+            vertical-align: middle;  
+            line-height: 8vw;
+            border-radius: 0.25vw;
+
+            &2 {
+                border: none;
+                opacity: 0.8;
+                margin-top: 13.5vw;
+                left: 38vw;
+            }
+        }
+        &-box {
+            border: 1px white solid;
+            width: 38.4%;
+            height: 8vw;
+            position: absolute;   
+            top: 1;
+            margin-top: 12.25vw;
+            left: 30.25vw;   
+            opacity: 0.5;
+            border-radius: 0.25vw;
         }
     }
     &__text {
@@ -97,13 +121,7 @@
     font-weight: normal;
 }
 
-.blob {
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #023F92;
-    width: 20vmax;
-    height: 20vw;
-    animation: move 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
+.brighter {
+    opacity: 0.6;
+    font-weight: bold;
+}

@@ -21,7 +21,7 @@
             width: 30%;
             text-align: left;
             position: relative;
-            top: 16vw;
+            top: 14vw;
             left: 27%;
             z-index: 0;
             color: white;
@@ -30,13 +30,13 @@
 
     &__title {
         background-image: url('../../assets/images/flower3.gif');
-        background-position: 0% 105%;
+        background-position: 0% 100%;
         background-clip: text;
         color: transparent;
         margin: 0;
     }
     &__maintext {
-        margin-top: -41vw;
+        margin-top: -41.5vw;
 
         &-first {
             color: $fadedorange;
@@ -45,6 +45,10 @@
         &-second {
             color: $greenblue;
             font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     &__wave {
@@ -52,7 +56,6 @@
         transform: scaleX(-1);
         z-index: 0;
         width: 100%;
-        opacity: 0.7;
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
@@ -69,7 +72,7 @@
 
             &1 {
                 stroke: none; 
-                fill: rgba(231, 242, 252, 0.8);
+                fill: rgba(231, 242, 252, 1);
                 margin-top: 15vw;
             }
         }
