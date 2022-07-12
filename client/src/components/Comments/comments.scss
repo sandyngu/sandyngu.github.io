@@ -1,0 +1,31 @@
+@import '../../partials/global';
+
+.comments {
+    height: 50vw;
+    background-color: lightgrey;
+
+    &__heading {
+        margin-right: 30vw;
+        padding-top: 15vw;
+        margin-top: 0;
+    }
+
+    &__wave {
+        margin-top: -16vw;
+        position: absolute;
+        transform: scaleX(-1);
+        z-index: 0;
+        width: 100%;
+        opacity: 0.6;
+
+         &1 {
+            transform: rotate(180deg) scaleX(-1);
+            margin-top: -16.1vw;
+            fill: rgba(231, 242, 252, 1);
+         }
+         &2 {
+            margin-top: 30vw;
+            fill: rgba(59, 75, 94, 1);
+         }
+    }
+}

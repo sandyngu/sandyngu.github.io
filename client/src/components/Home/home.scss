@@ -17,20 +17,23 @@
     height: 30vw;
 
     &1 {
-        background-image: url('../../assets/images/toronto_01.jpg');
+        background-image: url('../../assets/images/images/toronto_01.jpg');
         text-align: center;
         margin: auto;
         vertical-align: middle;
         align-items: center;
     }
     &2 {
-        background-image: url('../../assets/images/toronto_02.jpg');
+        background-image: url('../../assets/images/images/toronto_02.jpg');
         margin-top: 42vw;
     }
     &3 {
-        background-image: url('../../assets/images/toronto_03.jpg');
+        background-image: url('../../assets/images/images/toronto_03.jpg');
     }
     &4 {
-        background-image: url('../../assets/images/toronto_04.jpg');
+        background-image: url('../../assets/images/images/toronto_04.jpg');
+    }
+    &5 {
+        background-image: url('../../assets/images/images/toronto_05.jpg');
     }
 }

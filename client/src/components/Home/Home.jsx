@@ -7,6 +7,7 @@ import Welcome from '../Welcome/Welcome';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import Comments from '../Comments/Comments';
 import Footer from '../Footer/Footer';
 import './home.scss';
 
@@ -112,6 +113,7 @@ class Home extends React.Component {
         <AboutMe state={this.state}/>
         <Projects state={this.state}/>
         <Contact state={this.state}/>
+        <Comments state={this.state}/>
         <Footer state={this.state}/>
       </div>
     )
