@@ -63,6 +63,8 @@ function Contact() {
   }
 
   return (
+    <>
+    <div className="parallax parallax4"></div>
     <div className="contact section" id="contact">
         <p className="title" style={{display: 'none'}}>contact</p>
         <div className="contact__container">
@@ -106,6 +108,7 @@ hi
             </div>
         </div>
     </div>
+    </>
   )
 }
 

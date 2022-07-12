@@ -47,5 +47,6 @@ p {
     font-family:'GraphikMedium';
 }
 .flowers {
-    background-attachment: fixed;
+    opacity: 0.9;
+    z-index: 999;
 }

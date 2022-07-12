@@ -90,11 +90,8 @@ class Home extends React.Component {
         <HeaderBar state={this.state} logoHover={this.logoHover}/>
         <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact}/>
         <Welcome />
-        <div className="parallax parallax1"></div>
         <AboutMe state={this.state}/>
-        <div className="parallax parallax2"></div>
         <Projects state={this.state}/>
-        <div className="parallax parallax3"></div>
         <Contact state={this.state}/>
         <Footer state={this.state}/>
       </div>

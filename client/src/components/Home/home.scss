@@ -11,18 +11,26 @@
 
 .parallax {
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     height: 30vw;
 
     &1 {
         background-image: url('../../assets/images/toronto_01.jpg');
+        text-align: center;
+        margin: auto;
+        vertical-align: middle;
+        align-items: center;
     }
     &2 {
-        background-image: url('../../assets/images/toronto_02.gif');
+        background-image: url('../../assets/images/toronto_02.jpg');
+        margin-top: 42vw;
     }
     &3 {
-        background-image: url('../../assets/images/toronto_03.gif');
+        background-image: url('../../assets/images/toronto_03.jpg');
+    }
+    &4 {
+        background-image: url('../../assets/images/toronto_04.jpg');
     }
 }

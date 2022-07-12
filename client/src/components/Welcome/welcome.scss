@@ -1,15 +1,14 @@
 @import '../../partials/global';
 
 .welcome {
-    height: 50vw;
+    height: 45vw;
     color: white;
-    background-color: rgba(66, 87, 107, 0.8);
-    background-color: rgba(59, 75, 94, 0.8);
+    background-color: rgba(59, 75, 94, 1);
     margin: 0;
 
     &__image {
         width: 35%;
-        margin-top: 33.45vw;
+        margin-top: 56.5vw;
     }
 
     &__section {
@@ -31,13 +30,13 @@
 
     &__title {
         background-image: url('../../assets/images/flower3.gif');
-        background-position: 10% 70%;
+        background-position: 0% 105%;
         background-clip: text;
         color: transparent;
         margin: 0;
     }
     &__maintext {
-        margin-top: -29vw;
+        margin-top: -41vw;
 
         &-first {
             color: $fadedorange;
@@ -46,6 +45,33 @@
         &-second {
             color: $greenblue;
             font-weight: bold;
+        }
+    }
+    &__wave {
+        margin-top: -16vw;
+        transform: scaleX(-1);
+        z-index: 0;
+        width: 100%;
+        opacity: 0.7;
+
+         &1 {
+            transform: rotate(180deg) scaleX(-1);
+            margin-top: -145.5vw;
+         }
+         &2 {
+            margin-top: 30vw;
+         }
+
+        &-svg {
+            stroke: none; 
+            fill: rgba(59, 75, 94, 1);
+            margin-top: 15vw;
+
+            &1 {
+                stroke: none; 
+                fill: rgba(231, 242, 252, 0.8);
+                margin-top: 15vw;
+            }
         }
     }
 }
