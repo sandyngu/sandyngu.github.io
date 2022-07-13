@@ -9,7 +9,6 @@ function AboutMe() {
     <div className="section" id="aboutme">
       <p className="title" style={{display: 'none'}}>about me</p>
       <div className="parallax parallax1">
-          {/* <h2 className="aboutme__section-title">a <span className="outline">b</span><span className="outline">i</span>t ab<span className="outline">o</span>ut me.</h2> */}
           <h2 className="aboutme__section-title aboutme__section-title1">a <span className="brighter">bi</span>t ab<span className="brighter">o</span>ut me</h2>
           <div className="aboutme__section-box"></div>
       </div>

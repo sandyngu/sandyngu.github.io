@@ -1,15 +1,31 @@
 @import '../../partials/global';
 
 .comments {
-    height: 50vw;
-    background-color: lightgrey;
+    height: 60vw;
+    background-color: lightslategrey;
 
     &__heading {
+        background-image: url('../../assets/images/spiritedaway.gif');
+        background-size: 70%;
+        background-position: 30% 1100%;
+        background-clip: text;
+        color: transparent;
         margin-right: 30vw;
         padding-top: 15vw;
-        margin-top: 0;
+        margin-top: 0;    
+        background-image: url('../../assets/images/spiritedaway2.gif');
+        background-size: 70%;
+        background-position: 30% -450%;   
     }
-
+    &__flowers {
+        width: 35%;
+        top: 1;
+        margin-top: -43vw;
+        position: absolute;
+        right: 0;
+        transform: scaleX(-1);
+        z-index: 998;
+    }
     &__wave {
         margin-top: -16vw;
         position: absolute;
@@ -25,7 +41,7 @@
          }
          &2 {
             margin-top: 30vw;
-            fill: rgba(59, 75, 94, 1);
+            fill: rgba(231, 242, 252, 1);
          }
     }
 }

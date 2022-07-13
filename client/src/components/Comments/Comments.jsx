@@ -1,4 +1,5 @@
 import React from 'react';
+import Flowers from '../../assets/images/flowers3.png';
 import './comments.scss';
 
 function Comments() {
@@ -21,6 +22,7 @@ function Comments() {
         </div>
         <div className="comments">
             <h2 className="comments__heading">say something nice.</h2>
+            <img src={Flowers} alt="Flowers" className="comments__flowers flowers"/>
         </div>
     </div>
   )
