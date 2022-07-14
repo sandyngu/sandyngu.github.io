@@ -26,10 +26,20 @@ app.get("/comments", (req,res)=>{
     }
         );   
     });
+
+app.get("/projects", (req,res)=>{
+    db.query("SELECT * FROM projects", (err,result)=>{
+        if(err) {
+        console.log(err)
+        } 
+    res.send(result)
+    }
+        );   
+    });
     
-    app.listen(PORT, ()=>{
-        console.log(`rePORTing for duty on Port ${PORT}`)
-    })
+app.listen(PORT, ()=>{
+    console.log(`rePORTing for duty on Port ${PORT}`)
+})
 
 // let connection;
 // // make connection

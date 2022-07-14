@@ -76,8 +76,8 @@ function Contact() {
           </svg>
         </div>
         <div className="parallax parallax4">
-            <h2 className="aboutme__section-title aboutme__section-title1">get in touch</h2>
-            <div className="aboutme__section-box"></div>
+            <h2 className="contact__section-title box-title">get in touch</h2>
+            <div className="contact__section-box title-box"></div>
         </div>
         <div className="contact">
             <div className="contact__container">

@@ -17,8 +17,8 @@ function Projects() {
         </div>
         <p className="title" style={{display: 'none'}}>projects</p>
         <div className="parallax parallax3">
-            <h2 className="aboutme__section-title aboutme__section-title1">creations</h2>
-            <div className="aboutme__section-box"></div>
+            <h2 className="projects__section-title box-title">creations</h2>
+            <div className="projects__section-box title-box"></div>
         </div>
         <div className="projects">
             <h2 className="projects__heading">things i've made.</h2>

@@ -48,5 +48,33 @@ p {
 }
 .flowers {
     opacity: 0.9;
-    z-index: 999;
+    z-index: 997;
+}
+.box-title {
+    color: white;
+    font-weight: normal;
+    border: 1px white solid;
+    width: 25%;
+    opacity: 0.5;
+    position: absolute;   
+    top: 1;
+    padding: 2vw 0.5vw 0.5vw 0.5vw;
+    margin-top: 11.5vw;
+    left: 36vw;     
+    font-family: 'Antically';   
+    vertical-align: middle;  
+    line-height: 5vw;
+    border-radius: 0.25vw;
+    font-size: 3vw;
+    z-index: 997;
+}
+.title-box {
+    border: 1px white solid;
+    width: 25%;
+    height: 6.5vw;
+    position: absolute;   
+    top: 1;
+    margin-top: 12vw;
+    left: 36.5vw;   
+    border-radius: 0.25vw;
 }

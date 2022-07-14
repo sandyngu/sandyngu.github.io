@@ -17,8 +17,8 @@ function Comments() {
         </div>
         <p className="title" style={{display: 'none'}}>comments</p>
         <div className="parallax parallax5">
-            <h2 className="aboutme__section-title aboutme__section-title1">feedback</h2>
-            <div className="aboutme__section-box"></div>
+            <h2 className="comments__section-title box-title">feedback</h2>
+            <div className="comments__section-box title-box"></div>
         </div>
         <div className="comments">
             <h2 className="comments__heading">say something nice.</h2>

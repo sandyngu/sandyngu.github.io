@@ -5,17 +5,14 @@
     background-color: lightslategrey;
 
     &__heading {
-        background-image: url('../../assets/images/spiritedaway.gif');
-        background-size: 70%;
-        background-position: 30% 1100%;
+        // background-image: url('../../assets/images/haku2.gif');
+        background-size: 30%;
+        background-position: 5% 35%;   
         background-clip: text;
-        color: transparent;
+        // color: transparent;
         margin-right: 30vw;
         padding-top: 15vw;
         margin-top: 0;    
-        background-image: url('../../assets/images/spiritedaway2.gif');
-        background-size: 70%;
-        background-position: 30% -450%;   
     }
     &__flowers {
         width: 35%;
@@ -43,5 +40,13 @@
             margin-top: 30vw;
             fill: rgba(231, 242, 252, 1);
          }
+    }
+    &__section {
+
+        &-box {
+        background-image: url('../../assets/images/spiritedaway2.gif');
+        background-position: 80% 55%;
+        opacity: 0.2;
+        }
     }
 }

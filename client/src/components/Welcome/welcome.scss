@@ -24,7 +24,7 @@
             position: relative;
             top: 14vw;
             left: 27%;
-            z-index: 0;
+            z-index: 997;
             color: white;
         }
     }
@@ -62,7 +62,7 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -62.3vw;
+            margin-top: -62.25vw;
             fill: rgba(231, 242, 252, 1);
          }
          &2 {

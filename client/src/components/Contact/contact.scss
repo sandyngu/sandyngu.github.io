@@ -5,11 +5,11 @@
     background-color: rgba(211, 211, 211, 1);
 
     &__heading {
-        background-image: url('../../assets/images/sora.gif');
+        // background-image: url('../../assets/images/sora.gif');
         background-size: 75%;
         background-position: 50% 30%;
         background-clip: text;
-        color: transparent;
+        // color: transparent;
         margin: 0;
     }
     &__button {
@@ -109,14 +109,21 @@
 
          &1 {
             transform: rotate(180deg) scaleX(-1);
-            margin-top: -16vw;
+            margin-top: -16.05vw;
             fill: rgba(211, 211, 211, 1);
          }
          &2 {
             margin-top: 30vw;
             fill: rgba(96, 114, 133, 1);
          }
-        }
+    }
+    &__section {
+        &-box {
+            opacity: 0.3;
+            background-image: url('../../assets/images/appa2.gif'); 
+            background-position: 50% 70%; 
+        }    
+    }
 }
 
 .show {

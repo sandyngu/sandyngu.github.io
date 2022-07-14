@@ -21,14 +21,14 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    // axios.get('/')
-    //     .then(res => {
-    //         console.log(res.data)
-    //         this.setState({
-    //             projects: res.data
-    //         });
-    //     })
-    //     .catch(err => console.log(err))
+    axios.get('http://localhost:5000/projects')
+        .then(res => {
+            console.log(res.data)
+            this.setState({
+                projects: res.data
+            });
+        })
+        .catch(err => console.log(err))
     axios.get('http://localhost:5000/comments')
         .then(res => {
             console.log(res.data)
@@ -68,7 +68,6 @@ class Home extends React.Component {
       document.querySelector('.headerbar__menu-line1').classList.add('headerbar__menu--hover1')
       document.querySelector('.headerbar__menu-line2').classList.add('headerbar__menu--hide')
       document.querySelector('.headerbar__menu-line3').classList.add('headerbar__menu--hover2')
-      // document.querySelector('.navbar').style.display="block"
       document.querySelector('.navbar').classList.add('fade-in');
       document.querySelector('.navbar').classList.remove('fade-out');
       document.querySelector('.headerbar__menu').style.zIndex=999;
@@ -81,7 +80,6 @@ class Home extends React.Component {
       document.querySelector('.headerbar__menu-line3').classList.remove('headerbar__menu--hover2')
       document.querySelector('.navbar').classList.remove('fade-in');
       document.querySelector('.navbar').classList.add('fade-out');
-      // document.querySelector('.navbar').style.display="none"
       document.querySelector('.headerbar__menu').style.zIndex=-1;
     }
     setTimeout(1000,this.fadeMenu())
