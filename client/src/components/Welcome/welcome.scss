@@ -22,7 +22,7 @@
             width: 30%;
             text-align: left;
             position: relative;
-            top: 15.5vw;
+            top: 13vw;
             left: 27%;
             z-index: 997;
             color: white;
@@ -89,7 +89,7 @@
     top:1;
     margin-top: 13vw;
     left: 20vw;
-    filter: grayscale(50%);
+    filter: saturate(30%);
 
     &2 {
         margin-top: 22vw;
@@ -114,5 +114,10 @@
         top:1;
         left: 3vw;
         margin-top: 0vw;
+        filter: saturate(50%);
+        background-image: url('../../assets/images/vietnam.jpg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: -25% 70%;
     }
 }

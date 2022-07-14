@@ -1,7 +1,7 @@
 @import '../../partials/global';
 
 .comments {
-    height: 60vw;
+    height: 80vw;
     background-color: lightslategrey;
 
     &__heading {
@@ -48,5 +48,19 @@
         background-position: 80% 55%;
         opacity: 0.2;
         }
+    }
+
+    &box {
+        width: 50%;
+    }
+
+    &__text {
+        color: white;
+        text-align: left;
+    }
+
+    &__logo {
+        width: 1vw;
+        filter: grayscale(1) invert(1);
     }
 }
