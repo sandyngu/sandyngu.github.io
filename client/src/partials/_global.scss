@@ -78,3 +78,39 @@ p {
     left: 36.5vw;   
     border-radius: 0.25vw;
 }
+
+svg {
+    display: none;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vw;
+    border: 0.25vw solid white;
+    border-left: none;
+    border-right: none;
+
+    &1 {
+        background-image: url('../assets/images/images/toronto_01.jpg');
+        text-align: center;
+        margin: auto;
+        vertical-align: middle;
+        align-items: center;
+    }
+    &2 {
+        background-image: url('../assets/images/images/toronto_02.jpg');
+        margin-top: 42vw;
+    }
+    &3 {
+        background-image: url('../assets/images/images/toronto_03.jpg');
+    }
+    &4 {
+        background-image: url('../assets/images/images/toronto_04.jpg');
+    }
+    &5 {
+        background-image: url('../assets/images/images/toronto_05.jpg');
+    }
+}

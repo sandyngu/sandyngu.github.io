@@ -22,7 +22,7 @@
             width: 30%;
             text-align: left;
             position: relative;
-            top: 14vw;
+            top: 15.5vw;
             left: 27%;
             z-index: 997;
             color: white;
@@ -35,6 +35,7 @@
         background-clip: text;
         color: transparent;
         margin: 0;
+        visibility: hidden;
     }
     &__maintext {
         margin-top: -41.5vw;
@@ -49,6 +50,7 @@
 
             &:hover {
                 cursor: pointer;
+                color: black;
             }
         }
     }
@@ -69,5 +71,48 @@
             margin-top: -16.2vw;
             fill: rgba(59, 75, 94, 1);
          }
+    }
+}
+
+.new {
+    font-size: 9vw;
+    position: absolute;
+    font-family: 'Sketch';
+    background-image: url('../../assets/images/niagara.jpg');
+    background-position: -80% -700%;
+    background-size: 80%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+    left: 5vw;
+    top:1;
+    margin-top: 13vw;
+    left: 20vw;
+    filter: grayscale(50%);
+
+    &2 {
+        margin-top: 22vw;
+        font-size: 8vw;
+        left: 23vw;
+    }
+}
+
+.big {
+    font-size: 35vw;
+    position: absolute;
+    margin-top: 12vw;
+
+    &1 {
+        font-family: 'Sketch';
+        background-image: url('../../assets/images/vietnam2.jpg');
+        background-size: 70% 100%;
+        background-position: -75% 245%;
+        background-attachment: fixed;
+        background-clip: text;
+        color: transparent;
+        top:1;
+        left: 3vw;
+        margin-top: 0vw;
     }
 }

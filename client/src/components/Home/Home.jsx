@@ -15,7 +15,7 @@ class Home extends React.Component {
 
   state={
     hideMenu: true,
-    headerTitle: "sandy nguyen",
+    headerTitle: "hello, welcome",
     projects:[],
     comments:[]
   }
