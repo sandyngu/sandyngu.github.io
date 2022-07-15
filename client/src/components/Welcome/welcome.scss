@@ -82,7 +82,7 @@
     position: absolute;
     font-family: 'Antically';
     background-image: url('../../assets/images/niagara.jpg');
-    background-position: -90% -30%;
+    background-position: -70% 15%;
     background-size: 75%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -91,38 +91,34 @@
     left: 5vw;
     top:1;
     margin-top: 12vw;
-    left: 16vw;
-    filter: saturate(30%);
+    left: 23vw;
+    filter: saturate(30%) brightness(60%);
     z-index: 997;
 
     &2 {
-        margin-top: 22vw;
+        margin-top: 23vw;
         font-size: 8vw;
-        left: 16vw;
+        left: 21vw;
     }
 }
 
 .big {
-    font-size: 20vw;
+    font-size: 18vw;
     position: absolute;
-    margin-top: 12vw;
-
-    &1 {
-        font-family: 'Antically';
-        background-image: url('../../assets/images/vietnam2.jpg');
-        background-size: 70% 105%;
-        background-position: -55% 165%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-clip: text;
-        color: transparent;
-        top:1;
-        left: 3vw;
-        margin-top: 0vw;
-        filter: saturate(50%);
-        // background-image: url('../../assets/images/vietnam.jpg');
-        // background-size: 70%;
-        // background-repeat: no-repeat;
-        // background-position: -5% 50%;
-    }
+    font-family: 'Antically';
+    background-image: url('../../assets/images/vietnam2.jpg');
+    background-size: 70% 105%;
+    background-position: -35% 165%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
+    top:1;
+    left: 10.5vw;
+    margin-top: 3vw;
+    filter: saturate(50%);
+    // background-image: url('../../assets/images/vietnam.jpg');
+    // background-size: 70%;
+    // background-repeat: no-repeat;
+    // background-position: -5% 50%;
 }
