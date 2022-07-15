@@ -15,7 +15,7 @@ class Home extends React.Component {
 
   state={
     hideMenu: true,
-    headerTitle: "hello, welcome",
+    headerTitle: "why, hello there",
     projects:[],
     comments:[]
   }
@@ -29,7 +29,7 @@ class Home extends React.Component {
             });
         })
         .catch(err => console.log(err))
-        
+
     axios.get('http://localhost:5000/comments')
         .then(res => {
             console.log(res.data)

@@ -3,7 +3,7 @@
 .welcome {
     height: 45vw;
     color: white;
-    background-color: rgba(59, 75, 94, 1);
+    background-color: rgb(171, 183, 201);
     margin: 0;
 
     &__image {
@@ -26,16 +26,18 @@
             left: 27%;
             z-index: 997;
             color: white;
+            color: rgb(82, 81, 81);
+            font-weight: bold;
         }
     }
 
     &__title {
-        background-image: url('../../assets/images/flower3.gif');
-        background-position: 0% 100%;
-        background-clip: text;
-        color: transparent;
+        // background-image: url('../../assets/images/flower3.gif');
+        // background-position: 0% 100%;
+        // background-clip: text;
+        // color: transparent;
         margin: 0;
-        visibility: hidden;
+        color: white;
     }
     &__maintext {
         margin-top: -41.5vw;
@@ -43,14 +45,15 @@
         &-first {
             color: $fadedorange;
             font-weight: bold;
+            font-family: "GraphikMedium";
         }
         &-second {
-            color: $greenblue;
+            color: rgb(132, 160, 160);
             font-weight: bold;
 
             &:hover {
                 cursor: pointer;
-                color: black;
+                color: $greenblue;
             }
         }
     }
@@ -77,37 +80,39 @@
 .new {
     font-size: 9vw;
     position: absolute;
-    font-family: 'Sketch';
+    font-family: 'Antically';
     background-image: url('../../assets/images/niagara.jpg');
-    background-position: -80% -700%;
-    background-size: 80%;
+    background-position: -90% -30%;
+    background-size: 75%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-clip: text;
     color: transparent;
     left: 5vw;
     top:1;
-    margin-top: 13vw;
-    left: 20vw;
+    margin-top: 12vw;
+    left: 16vw;
     filter: saturate(30%);
+    z-index: 997;
 
     &2 {
         margin-top: 22vw;
         font-size: 8vw;
-        left: 23vw;
+        left: 16vw;
     }
 }
 
 .big {
-    font-size: 35vw;
+    font-size: 20vw;
     position: absolute;
     margin-top: 12vw;
 
     &1 {
-        font-family: 'Sketch';
+        font-family: 'Antically';
         background-image: url('../../assets/images/vietnam2.jpg');
-        background-size: 70% 100%;
-        background-position: -75% 245%;
+        background-size: 70% 105%;
+        background-position: -55% 165%;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         background-clip: text;
         color: transparent;
@@ -115,9 +120,9 @@
         left: 3vw;
         margin-top: 0vw;
         filter: saturate(50%);
-        background-image: url('../../assets/images/vietnam.jpg');
-        background-size: 70%;
-        background-repeat: no-repeat;
-        background-position: -25% 70%;
+        // background-image: url('../../assets/images/vietnam.jpg');
+        // background-size: 70%;
+        // background-repeat: no-repeat;
+        // background-position: -5% 50%;
     }
 }

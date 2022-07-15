@@ -2,7 +2,7 @@
 
 .comments {
     height: 80vw;
-    background-color: lightslategrey;
+    background-color: rgb(165, 180, 194);
 
     &__heading {
         // background-image: url('../../assets/images/haku2.gif');
@@ -11,7 +11,7 @@
         background-clip: text;
         // color: transparent;
         margin-right: 30vw;
-        padding-top: 15vw;
+        padding-top: 13vw;
         margin-top: 0;    
     }
     &__flowers {
@@ -46,7 +46,7 @@
         &-box {
         background-image: url('../../assets/images/spiritedaway2.gif');
         background-position: 80% 55%;
-        opacity: 0.2;
+        opacity: 0.3;
         }
     }
 

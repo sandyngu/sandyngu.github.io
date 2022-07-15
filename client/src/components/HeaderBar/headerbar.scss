@@ -9,9 +9,10 @@
     height: 7.5vw;
     font-size: 3vw;
     display: flex;
-    background-color: $headergreen;
+    background-color: rgb(225, 231, 231);
     z-index: 999;
     font-family: 'Kintanya';
+    border-bottom: 0.25vw solid white;
 
     &__logo {
         width: 8vw;
@@ -23,7 +24,7 @@
     }
     &__menu {
         width: 8vw;
-        height: 7.87vw;
+        height: 7.5vw;
         background-color: rgba($menublue, 0.9);
         margin: 0;
         color: white;

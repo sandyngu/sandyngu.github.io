@@ -5,7 +5,7 @@ import './welcome.scss';
 function Welcome() {
   return (
     <div className="welcome section" id="welcome">
-        <p className="title" style={{display: 'none'}}>hello, welcome</p>
+        <p className="title" style={{display: 'none'}}>why, hello there</p>
         <div className="welcome__section">
             <img src={Flowers} alt="Flowers" className="welcome__image flowers"/>
             <h1 className="new new1">andy</h1>

@@ -27,11 +27,9 @@ p {
     background-image: linear-gradient(to left, rgb(241, 189, 241), rgb(182, 116, 230), rgb(138, 162, 238), rgb(157, 218, 157), rgb(243, 226, 128), rgb(241, 182, 70), rgb(247, 115, 115));
     background-clip: text;
     color: transparent;
+    background-image: url('../assets/images/rainbow5a.gif');
+    filter: grayscale(50%) brightness(150%);
 }
-
-// .highlight {
-//     color: $headergreen;
-// }
 
 .red {
     color: $orangered;
@@ -40,7 +38,7 @@ p {
     color: $greenblue;
 }
 .highlight {
-    color: $headergreen;
+    color: white;
 }
 .bold {
     font-weight: bold;
