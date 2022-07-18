@@ -1,16 +1,26 @@
 import React from 'react';
+import $ from 'jquery';
 import Flowers from '../../assets/images/flowers3.png';
 import Paint from '../../assets/images/paint.png';
 import Paint2 from '../../assets/images/paint4.png';
 import './aboutme.scss';
 
 function AboutMe() {
+
+  $(window).on('scroll', function() {
+    let oVal = ($(window).scrollTop() / 240)
+    $(".blurred").css("opacity", oVal)
+  })
+
   return (
     <div className="section" id="aboutme">
       <p className="title" style={{display: 'none'}}>about me</p>
-      <div className="parallax parallax1">
-          <h2 className="aboutme__section-title aboutme__section-title1 box-title">a <span className="brighter">bi</span>t ab<span className="brighter">o</span>ut me</h2>
-          <div className="aboutme__section-box aboutme__section-box1 title-box"></div>
+      <div className="container">
+          <div className="parallax parallax1">
+              <h2 className="aboutme__section-title aboutme__section-title1 box-title">a <span className="brighter">bi</span>t ab<span className="brighter">o</span>ut me</h2>
+              <div className="aboutme__section-box aboutme__section-box1 title-box"></div>
+          </div>
+          <div className="parallax parallax1 blurred"></div>
       </div>
       <div className="aboutme">     
           <img src={Flowers} alt="Flowers" className="aboutme__flowers flowers"/>

@@ -1,8 +1,13 @@
 import React from 'react';
 import Flowers from '../../assets/images/flowers3.png';
+import RectanglePolaroid from '../../assets/images/rectangle-polaroid.png';
+import Polaroid from '../../assets/images/polaroid.png';
+import ProjectQueue from '../ProjectQueue/ProjectQueue'
 import './projects.scss';
 
-function Projects() {
+function Projects(props) {
+
+  console.log(props.state.projects[props.state.projects.length-1])
   return (
     <div className="section" id="projects">
         <div className="projects__wave projects__wave1">
@@ -23,6 +28,17 @@ function Projects() {
         <div className="projects">
             <h2 className="projects__heading">things i've made.</h2>
             <img src={Flowers} alt="Flowers" className="projects__flowers flowers"/>
+        </div>
+        <div className="projects__display">
+            <div className="projects__display--main">
+                <img src={RectanglePolaroid} className="projects__display--main-polaroid" alt="Polaroid"/>
+                {/* <div className="projects__display--main-title">{props.state.projects[props.state.projects.length-1]}</div> */}
+            </div>
+            <div className="projects__display--side">
+                {props.state.projects.map(videoInfo => 
+                      <ProjectQueue key={videoInfo.id} id={videoInfo.id} name={videoInfo.name} description={videoInfo.description} hero={videoInfo.hero}/>
+                    )}
+            </div>
         </div>
     </div>
   )

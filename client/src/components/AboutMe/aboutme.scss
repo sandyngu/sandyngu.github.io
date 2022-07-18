@@ -128,3 +128,11 @@
     opacity: 0.6;
     font-weight: bold;
 }
+
+.container {
+    position: relative;
+}
+.blurred {
+    opacity: 0;
+    position: fixed;
+}

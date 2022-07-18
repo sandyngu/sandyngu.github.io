@@ -1,0 +1,17 @@
+@import '../../partials/global';
+
+.projectqueue {
+    display: flex;
+    justify-content: center;
+    
+    &__polaroid {
+        width: 10vw;
+    }
+
+    &__content {
+
+        &-thumbnail {
+            width: 10vw;
+        }
+    }
+}

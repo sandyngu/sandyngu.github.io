@@ -3,6 +3,15 @@
 .projects {
     height: 75vw;
     background-color: rgb(208, 212, 212);
+    
+    &__section {
+    
+        &-box {
+        background-image: url('../../assets/images/sorafull.gif');
+        background-position: 80% 55%;
+        opacity: 0.4;
+        }
+    }
 
     &__heading {
         // background-image: url('../../assets/images/appa2a.gif');
@@ -10,7 +19,7 @@
         background-position: 37.75% 60%;
         background-clip: text;
         // color: transparent;
-        padding: 13vw 0;
+        padding-top: 13vw;
         margin: 0;
     }
 
@@ -40,13 +49,26 @@
             fill:rgba(231, 242, 252, 1);
          }
     }
+    &__display {
+        display: flex;
+        margin-top: -50vw;
+        justify-content: center;
+        width: 100%;
 
-    &__section {
+        &--main {
+            width: 60%;
 
-        &-box {
-        background-image: url('../../assets/images/sorafull.gif');
-        background-position: 80% 55%;
-        opacity: 0.4;
+            &-polaroid {
+                width: 48vw;
+            }
+        }
+        &--side {
+            width: 20%;
+            border-left: 1px solid grey;
+
+            &-polaroid {
+                width: 10vw;
+            }
         }
     }
 }
