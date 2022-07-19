@@ -26,16 +26,6 @@ class Comments extends React.Component {
 
     return (
       <div className="section">
-          <div className="comments__wave comments__wave1">
-            <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
-              <path className="comments__wave-svg comments__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
-            </svg>
-          </div>
-          <div className="comments__wave comments__wave2">
-            <svg viewBox="0 60 500 80" preserveAspectRatio="xMinYMin meet">
-              <path className="comments__wave-svg comments__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
-            </svg>
-          </div>
           <p className="title" style={{display: 'none'}}>comments</p>
           <div className="parallax parallax5">
               <h2 className="comments__section-title box-title">feedback</h2>

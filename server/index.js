@@ -6,7 +6,7 @@ const knex = require("./knexfile");
 const cors = require('cors');
 const db = require('./config/db')
 
-// const Comment = require('./models/Comments.js');
+// const Comment = require('./models/Comments.js');  
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -38,6 +38,7 @@ app.get("/projects", (req,res)=>{
     });
 
 app.get('/projects/:id', (req, res) => {
+
     const updatedProject = projectsData.find(project => project.id === req.params.id)
     const { id, name, description, hero, techstacks } = updatedProject
     res.json({
@@ -47,6 +48,8 @@ app.get('/projects/:id', (req, res) => {
         hero: hero,
         techstacks: techstacks
     })
+    console.log(projectsData)
+    console.log(updatedProject)
     })
     
 app.listen(PORT, ()=>{

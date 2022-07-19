@@ -20,6 +20,12 @@
         padding-bottom: 1vw;
     }
 
+    &__container {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &__content {
         position: relative;
 

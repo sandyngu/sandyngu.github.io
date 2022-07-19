@@ -16,16 +16,6 @@ function Welcome() {
                 <p className="welcome__maintext"><span className="welcome__maintext-first">Hi! You've managed to stumble upon my personal portfolio─ congratulations.</span> <br/><br/>It's nice to have some company so feel free to take a look around. I created this webpage from scratch so I hope it's somewhat impressive. Keep scrolling down to learn about me and the small projects I've worked on, and don't hesitate to <a href="#contact"><span className="welcome__maintext-second">connect with me!</span></a></p>
             </div>
         </div>
-        <div className="welcome__wave welcome__wave1">
-            <svg viewBox="0 60 500 80">             
-              <path className="welcome__wave-svg welcome__wave-svg1" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>           
-            </svg>
-        </div>
-        <div className="welcome__wave welcome__wave2">
-            <svg viewBox="0 60 500 80">             
-              <path className="welcome__wave-svg welcome__wave-svg2" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>           
-            </svg>
-        </div>
     </div>
   )
 }
