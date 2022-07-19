@@ -3,6 +3,7 @@
 .projects {
     height: 75vw;
     background-color: rgb(208, 212, 212);
+    padding-bottom: 10vw;
     
     &__section {
     
@@ -51,24 +52,51 @@
     }
     &__display {
         display: flex;
-        margin-top: -50vw;
+        margin-top: 5vw;
         justify-content: center;
         width: 100%;
 
         &--main {
             width: 60%;
+            position: relative;
 
             &-polaroid {
                 width: 48vw;
+                position: relative;
+                z-index: 998;
             }
         }
         &--side {
             width: 20%;
             border-left: 1px solid grey;
-
-            &-polaroid {
-                width: 10vw;
-            }
+        }
+        &-hero {
+            position: relative;
+            top: 1;
+            margin-top: -1.75vw;
+            height: 27.5vw;
+            width: 44.25vw;
+            left: 0;
+            z-index: 996;
+        }
+        &-name {
+            position: relative;
+            margin-top: -37.75vw;
+            z-index: 998;
+            font-size: 2vw;
+            font-family: 'Kintanya';
+        }
+        &-description {
+            position: absolute;
+            z-index: 998;
+            font-size: 1vw;
+            width: 75%;
+            top: 1;
+            margin-top: 1vw;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

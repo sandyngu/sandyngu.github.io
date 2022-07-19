@@ -16,20 +16,10 @@ class Home extends React.Component {
   state={
     hideMenu: true,
     headerTitle: "why, hello there",
-    projects:[],
     comments:[]
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/projects')
-        .then(res => {
-            console.log(res.data)
-            this.setState({
-                projects: res.data
-            });
-        })
-        .catch(err => console.log(err))
-
     axios.get('http://localhost:5000/comments')
         .then(res => {
             console.log(res.data)

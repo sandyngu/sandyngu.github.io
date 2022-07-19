@@ -36,6 +36,18 @@ app.get("/projects", (req,res)=>{
     }
         );   
     });
+
+app.get('/projects/:id', (req, res) => {
+    const updatedProject = projectsData.find(project => project.id === req.params.id)
+    const { id, name, description, hero, techstacks } = updatedProject
+    res.json({
+        id: id,
+        name: name,
+        description: description,
+        hero: hero,
+        techstacks: techstacks
+    })
+    })
     
 app.listen(PORT, ()=>{
     console.log(`rePORTing for duty on Port ${PORT}`)

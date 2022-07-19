@@ -4,12 +4,10 @@ import './projectqueue.scss';
 
 function ProjectQueue(props) {
     const { id, name, description, hero } = props;
-    console.log(props.hero)
 
   return (
-                  
-    <div className="projectqueue"> 
-        {/* {props[0].id !== id &&  */}
+    <>       
+        {hero.id !== id &&
         <div className="projectqueue__container">                     
             <img src={Polaroid} className="projectqueue__polaroid" alt="Polaroid"/>
             <div className="projectqueue__content">
@@ -17,8 +15,8 @@ function ProjectQueue(props) {
                 <img src={hero} className="projectqueue__content-thumbnail" alt="Polaroid"/>
             </div>
         </div>
-        {/* }    */}
-    </div>
+        }
+    </>
   )
 }
 

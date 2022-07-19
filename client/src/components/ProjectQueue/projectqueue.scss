@@ -3,15 +3,48 @@
 .projectqueue {
     display: flex;
     justify-content: center;
-    
+    margin-top: -1vw;
+    flex-wrap: wrap;
+    height: 41vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 20%;
+    border-left: 0.1vw solid grey;
+
     &__polaroid {
-        width: 10vw;
+        width: 15vw;
+        height: 13vw;
+        position: relative;
+        z-index: 998;
+        padding-bottom: 1vw;
     }
 
     &__content {
+        position: relative;
 
         &-thumbnail {
-            width: 10vw;
+            width: 14vw;
+            height: 9vw;
+            position: absolute;
+            top: 1;
+            margin-top: -13vw;
+            right: 0.5vw;
+            z-index: 996;
+            
+        }
+
+        &-name {
+            position: absolute;
+            top:1;
+            margin-top: -4vw;
+            z-index: 998;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            font-family: 'Kintanya';
+            font-size: 1.5vw;
         }
     }
 }
