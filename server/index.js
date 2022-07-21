@@ -20,36 +20,44 @@ const PORT = process.env.PORT || 5000
 app.get("/comments", (req,res)=>{
     db.query("SELECT * FROM comments", (err,result)=>{
         if(err) {
-        console.log(err)
+            console.log(err)
         } 
-    res.send(result)
-    }
-        );   
-    });
+        res.send(result)
+    });   
+});
 
 app.get("/projects", (req,res)=>{
     db.query("SELECT * FROM projects", (err,result)=>{
         if(err) {
-        console.log(err)
+            console.log(err)
         } 
-    res.send(result)
-    }
-        );   
-    });
+        res.send(result)
+    });   
+});
+
+
 
 app.get('/projects/:id', (req, res) => {
 
-    const updatedProject = projectsData.find(project => project.id === req.params.id)
-    const { id, name, description, hero, techstacks } = updatedProject
-    res.json({
-        id: id,
-        name: name,
-        description: description,
-        hero: hero,
-        techstacks: techstacks
-    })
-    console.log(projectsData)
-    console.log(updatedProject)
+    // db.query("SELECT * FROM projects", (err,result)=>{
+    //     if(err) {
+    //         console.log(err)
+    //     } 
+    //     res.send(result)
+    // })
+    // const projectsData = result;   
+
+    // const updatedProject = projectsData.find(project => project.id === req.params.id)
+    // const { id, name, description, hero, techstacks } = updatedProject
+    // res.json({
+    //     id: id,
+    //     name: name,
+    //     description: description,
+    //     hero: hero,
+    //     techstacks: techstacks
+    // })
+    // console.log(projectsData)
+    // console.log(updatedProject)
     })
     
 app.listen(PORT, ()=>{

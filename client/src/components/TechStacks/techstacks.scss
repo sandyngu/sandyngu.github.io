@@ -1,0 +1,25 @@
+@import '../../partials/global';
+
+.techstacks {
+    position: absolute;
+    width: 11vw;
+    height: 10vw;
+    z-index: 998;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    margin-left: -1.25vw; 
+    top: 1;
+    margin-top: -13.5vw;
+    transform: rotate(344deg);
+    z-index: 998;
+
+
+    &__logo {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin: 0.25vw;
+        display: none;
+    }
+}

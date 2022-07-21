@@ -47,15 +47,13 @@ class Comments extends React.Component {
                     {this.state.comments !== null &&
                     <>
                         <div className="comments__box-comments">
-                          <div className="comments__container">
                           {this.state.comments.map(comment => 
-                              <>
+                          <div className="comments__container" key={comment.id}>
                                 <p className="comments__text comments__name">{comment.name} said...</p>
                                 <p className="comments__text comments__text1" id="text">{comment.comment}</p>
                                 <p className="comments__text comments__position">~ {comment.position} <img src={BrainStation} alt="BrainStation Logo" className="comments__logo"/></p>
-                              </>
-                              )}
                           </div>
+                              )}
                         </div>
                     </>
                     }

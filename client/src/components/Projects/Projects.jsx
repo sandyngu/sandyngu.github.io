@@ -1,8 +1,11 @@
 import React from 'react';
 import axios from 'axios';
+import TechStacks from '../TechStacks/TechStacks';
 import Flowers from '../../assets/images/flowers3.png';
 import RectanglePolaroid from '../../assets/images/rectangle-polaroid.png';
-import ProjectQueue from '../ProjectQueue/ProjectQueue'
+import ProjectQueue from '../ProjectQueue/ProjectQueue';
+import Paper from '../../assets/images/paper2.png';
+import Postit from '../../assets/images/postit.png';
 import './projects.scss';
 
 class Projects extends React.Component {
@@ -26,23 +29,12 @@ class Projects extends React.Component {
   }
 
   updateHero = (id) => {
-    axios.get(`http://localhost:5000/projects/${id}`)
-    .then(res => {  
-      window.scrollTo(0, 0);
-      
-      this.setState({
-        heroProject: [res.data]
-      });
-      console.log(res.data)
+    const updatedProject = this.state.projects.find(project => project.id === id)
+
+    this.setState({
+      heroProject: updatedProject
     })
-    .catch(err => console.log(err));
-  };
-  
-  componentDidUpdate(prevProps) {
-    
-    if (prevProps.params !== this.props.params) {
-      this.updateHero(this.props.params.id);
-    };
+    console.log(this.state.heroProject)
   };
   
   render() {
@@ -64,11 +56,17 @@ class Projects extends React.Component {
               <div className="projects__display">
                   <div className="projects__display--main">
                       <img src={RectanglePolaroid} className="projects__display--main-polaroid" alt="Polaroid"/>
+                      <img src={Paper} className="projects__paper" alt="Ripped Paper"/>
+                      <img src={Postit} className="projects__postit" alt="Ripped Paper"/>
                       {this.state.projects[0] &&
                       <>
                           <h2 className="projects__display-name">{this.state.heroProject.name}</h2>
-                          <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Chawpsticks x Valorant Site"/>
-                          <p className="projects__display-description">{this.state.heroProject.description}</p>
+                          <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project Image"/>
+                          <div className="projects__display-description">{this.state.heroProject.description}</div>
+                          <div className="projects__display-techstacks">
+                            {this.state.projects[0] &&
+                                <TechStacks heroProject={this.state.heroProject} />}
+                          </div>
                       </>
                       }
                   </div>
