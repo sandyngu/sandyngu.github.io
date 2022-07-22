@@ -32,29 +32,12 @@
         left: 0;
         z-index: 998;  
     }
-    &__wave {
-        position: absolute;
-        margin-top: -16vw;
-        transform: scaleX(-1);
-        z-index: 0;
-        width: 100%;
-        opacity: 0.6;
-
-         &1 {
-            transform: rotate(180deg) scaleX(-1);
-            margin-top: -16.05vw;
-            fill: rgba(96, 114, 133, 1);
-         }
-         &2 {
-            margin-top: 30vw;
-            fill:rgba(231, 242, 252, 1);
-         }
-    }
     &__display {
         display: flex;
         margin-top: 5vw;
         justify-content: center;
         width: 100%;
+        // padding: 5vw 0;
 
         &--main {
             width: 60%;
@@ -65,10 +48,6 @@
                 position: relative;
                 z-index: 998;
             }
-        }
-        &--side {
-            width: 20%;
-            border-left: 1px solid grey;
         }
         &-hero {
             top: 1;
@@ -89,8 +68,8 @@
             position: absolute;
             display: flex;
             z-index: 998;
-            font-size: 1vw;
-            width: 65%;
+            font-size: 0.9vw;
+            width: 55%;
             top: 1;
             margin-top: 2vw;
             right: 0;
@@ -106,9 +85,9 @@
     &__paper {
         position: absolute;
         top: 1;
-        margin-top: 28vw;
+        margin-top: 27vw;
         width: 45vw;
-        height: 12vw;
+        height: 13vw;
         right: 0;
         left: 0;
         margin-left: auto;
@@ -129,6 +108,7 @@
         &-title {
             position: absolute;
             font-family: 'Kintanya';
+            font-weight: bold;
             font-size: 1.3vw;
             top: 1;
             margin-top: -21.5vw;
@@ -138,8 +118,4 @@
             text-decoration: $orangered underline;
         }
     }
-}
-
-.hide {
-    visibility: hidden;
 }

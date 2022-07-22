@@ -23,24 +23,6 @@
         transform: scaleX(-1);
         z-index: 998;
     }
-    &__wave {
-        margin-top: -16vw;
-        position: absolute;
-        transform: scaleX(-1);
-        z-index: 0;
-        width: 100%;
-        opacity: 0.6;
-
-         &1 {
-            transform: rotate(180deg) scaleX(-1);
-            margin-top: -16.1vw;
-            fill: rgba(231, 242, 252, 1);
-         }
-         &2 {
-            margin-top: 30vw;
-            fill: rgba(231, 242, 252, 1);
-         }
-    }
     &__section {
 
         &-box {

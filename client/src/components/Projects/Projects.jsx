@@ -4,7 +4,7 @@ import TechStacks from '../TechStacks/TechStacks';
 import Flowers from '../../assets/images/flowers3.png';
 import RectanglePolaroid from '../../assets/images/rectangle-polaroid.png';
 import ProjectQueue from '../ProjectQueue/ProjectQueue';
-import Paper from '../../assets/images/paper2.png';
+import Paper from '../../assets/images/paper.png';
 import Postit from '../../assets/images/postit.png';
 import './projects.scss';
 

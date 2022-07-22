@@ -99,24 +99,6 @@
         width: 10%;
         padding: 0 20vw;
     }
-    &__wave {
-        position: absolute;
-        margin-top: -16vw;
-        transform: scaleX(-1);
-        z-index: 0;
-        width: 100%;
-        opacity: 0.6;
-
-         &1 {
-            transform: rotate(180deg) scaleX(-1);
-            margin-top: -16.05vw;
-            fill: rgba(211, 211, 211, 1);
-         }
-         &2 {
-            margin-top: 30vw;
-            fill: rgba(96, 114, 133, 1);
-         }
-    }
     &__section {
         &-box {
             opacity: 0.3;
