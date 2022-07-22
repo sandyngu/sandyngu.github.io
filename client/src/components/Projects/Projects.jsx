@@ -19,8 +19,10 @@ class Projects extends React.Component {
     axios.get('http://localhost:5000/projects')
     .then(res => {
         console.log(res.data)
+        let a = res.data
+        let b = a.slice().reverse()
         this.setState({
-            projects: res.data,
+            projects: b,
             heroProject: res.data[res.data.length-1]
         });
         console.log(this.state.heroProject)
@@ -38,7 +40,6 @@ class Projects extends React.Component {
   };
   
   render() {
-    const lastProject = this.state.projects[this.state.projects.length-1]
 
     return (
       <div className="section" id="projects">
@@ -58,15 +59,14 @@ class Projects extends React.Component {
                       <img src={RectanglePolaroid} className="projects__display--main-polaroid" alt="Polaroid"/>
                       <img src={Paper} className="projects__paper" alt="Ripped Paper"/>
                       <img src={Postit} className="projects__postit" alt="Ripped Paper"/>
+                      <div className="projects__postit-title">TechStacks</div>
                       {this.state.projects[0] &&
                       <>
                           <h2 className="projects__display-name">{this.state.heroProject.name}</h2>
-                          <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project Image"/>
-                          <div className="projects__display-description">{this.state.heroProject.description}</div>
-                          <div className="projects__display-techstacks">
+                          <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project"/>
+                          <div className="projects__display-description">{this.state.heroProject.description}</div>                        
                             {this.state.projects[0] &&
                                 <TechStacks heroProject={this.state.heroProject} />}
-                          </div>
                       </>
                       }
                   </div>

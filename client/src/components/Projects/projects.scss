@@ -125,5 +125,21 @@
         margin-top: 12vw;
         transform: rotate(345deg);
         z-index: 998;
+
+        &-title {
+            position: absolute;
+            font-family: 'Kintanya';
+            font-size: 1.3vw;
+            top: 1;
+            margin-top: -21.5vw;
+            transform: rotate(345deg);
+            z-index: 998;
+            left: -2vw;
+            text-decoration: $orangered underline;
+        }
     }
+}
+
+.hide {
+    visibility: hidden;
 }

@@ -12,14 +12,21 @@ import MySQL from '../../assets/images/projects/mysql.png';
 import './techstacks.scss';
 
 function TechStacks(props) {
+    console.log(props.heroProject.techstacks)
+    
+    $(document).ready(function () {
+        const TechStacks = props.heroProject.techstacks
 
-$(document).ready(function () {
-
-    if (props.heroProject.description.includes('HTML')) {
-        document.querySelector('.techstacks__logo-html').style.display='inline-block';
-        return true
-    }
-})
+        TechStacks.includes('HTML')?document.querySelector('.techstacks__logo-html').style.display="block":document.querySelector('.techstacks__logo-html').style.display="none";
+        TechStacks.includes('CSS')?document.querySelector('.techstacks__logo-css').style.display="block":document.querySelector('.techstacks__logo-css').style.display="none";
+        TechStacks.includes('Sass')?document.querySelector('.techstacks__logo-sass').style.display="block":document.querySelector('.techstacks__logo-sass').style.display="none";
+        TechStacks.includes('Node')?document.querySelector('.techstacks__logo-node').style.display="block":document.querySelector('.techstacks__logo-node').style.display="none";
+        TechStacks.includes('Express')?document.querySelector('.techstacks__logo-express').style.display="block":document.querySelector('.techstacks__logo-express').style.display="none";
+        TechStacks.includes('Bookshelf')?document.querySelector('.techstacks__logo-bookshelf').style.display="block":document.querySelector('.techstacks__logo-bookshelf').style.display="none";
+        TechStacks.includes('Knex')?document.querySelector('.techstacks__logo-knex').style.display="block":document.querySelector('.techstacks__logo-knex').style.display="none";
+        TechStacks.includes('React')?document.querySelector('.techstacks__logo-react').style.display="block":document.querySelector('.techstacks__logo-react').style.display="none";
+        TechStacks.includes('MySQL')?document.querySelector('.techstacks__logo-mysql').style.display="block":document.querySelector('.techstacks__logo-mysql').style.display="none";
+      })
 
   return (
     <div className="techstacks">

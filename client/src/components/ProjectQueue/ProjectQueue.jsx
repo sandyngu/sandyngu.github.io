@@ -3,7 +3,7 @@ import Polaroid from '../../assets/images/polaroid.png';
 import './projectqueue.scss';
 
 function ProjectQueue(props) {
-    const { id, name, description, hero, heroProject } = props;
+    const { id, name, hero, heroProject } = props;
 
   return (
     <div>       
