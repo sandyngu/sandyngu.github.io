@@ -12,6 +12,7 @@
     "detect-port-alt": "^1.1.6",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "html-minifier-terser": "^7.0.0-beta.0",
     "is-docker": "^3.0.0",
     "jquery": "^3.6.0",
     "jsesc": "^3.0.2",
@@ -24,6 +25,11 @@
     "regjsparser": "^0.8.4",
     "rollup": "^2.75.6",
     "sass": "^1.52.3",
+    "svgo": "^2.8.0",
+    "terser": "^5.14.2",
     "which": "^2.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
