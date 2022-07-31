@@ -17,7 +17,7 @@
         height: 13vw;
         position: relative;
         z-index: 998;
-        padding-bottom: 1vw;
+        padding-bottom: 0.7vw;
     }
 
     &__container {
@@ -35,7 +35,7 @@
             height: 9vw;
             position: absolute;
             top: 1;
-            margin-top: -13vw;
+            margin-top: -12.75vw;
             right: 0.5vw;
             z-index: 996;
             
@@ -44,7 +44,7 @@
         &-name {
             position: absolute;
             top:1;
-            margin-top: -4vw;
+            margin-top: -3.5vw;
             z-index: 998;
             left: 0; 
             right: 0; 
