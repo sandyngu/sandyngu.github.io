@@ -2,11 +2,12 @@ module.exports = {
     development: {
       client: "mysql",
       connection: {
-        host: "localhost",
+        host: "127.0.0.1",
         user: "root",
         password: "nursimulator",
         database: "portfolio",
         charset: "utf8",
+        port: '3306',
         insecureAuth: true
       }
     },
