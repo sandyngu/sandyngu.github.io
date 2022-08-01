@@ -8,6 +8,7 @@ module.exports = {
         database: "portfolio",
         charset: "utf8",
         port: '3306',
+        socketPath: '/var/run/mysqld/mysqld.sock',
         insecureAuth: true
       }
     },
