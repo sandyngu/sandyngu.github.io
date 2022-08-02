@@ -12,7 +12,6 @@ import MySQL from '../../assets/images/projects/mysql.png';
 import './techstacks.scss';
 
 function TechStacks(props) {
-    console.log(props.heroProject.techstacks)
     
     $(document).ready(function () {
         const TechStacks = props.heroProject.techstacks

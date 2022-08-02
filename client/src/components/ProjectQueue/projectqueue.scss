@@ -6,11 +6,14 @@
     margin-top: -1vw;
     flex-wrap: wrap;
     height: 41vw;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
+    overflow-y: scroll;
     width: 20%;
     border-left: 0.1vw solid white;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     &__polaroid {
         width: 15vw;

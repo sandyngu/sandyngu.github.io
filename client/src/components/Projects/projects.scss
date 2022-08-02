@@ -27,7 +27,7 @@
     &__flowers {
         width: 35%;
         top: 1;
-        margin-top: 55vw;
+        margin-top: 73vw;
         position: absolute;
         left: 0;
         z-index: 998;  
@@ -81,6 +81,15 @@
             align-items: center;
             height: 5.5vw;
         }
+        &-date {
+            position: absolute;
+            font-family: 'Handwriting';
+            font-size: 1.5vw;
+            top: 1;
+            margin-top: 8vw;
+            right: 13.5vw;
+            z-index: 998;
+        }
     }
     &__paper {
         position: absolute;
@@ -116,6 +125,27 @@
             z-index: 998;
             left: -2vw;
             text-decoration: $orangered underline;
+        }
+    }
+    &__more {
+        width: 1.5vw;
+        height: 3.5vw;
+        opacity: 0.5;
+        position: absolute;
+        right: 10vw;
+        z-index: 998;
+        top: 1;
+        margin-top: 37vw;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+        &-container {
+            
+            &:hover {
+                animation: loadDots 3s ease;
+            }        
         }
     }
 }

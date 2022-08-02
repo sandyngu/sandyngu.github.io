@@ -1,8 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import $ from 'jquery';
 import TechStacks from '../TechStacks/TechStacks';
 import Flowers from '../../assets/images/flowers3.png';
 import RectanglePolaroid from '../../assets/images/rectangle-polaroid.png';
+import Dots from '../../assets/images/dots.png';
 import ProjectQueue from '../ProjectQueue/ProjectQueue';
 import Paper from '../../assets/images/paper.png';
 import Postit from '../../assets/images/postit.png';
@@ -18,14 +20,12 @@ class Projects extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:5000/projects')
     .then(res => {
-        console.log(res.data)
         let a = res.data
         let b = a.slice().reverse()
         this.setState({
             projects: b,
             heroProject: res.data[res.data.length-1]
         });
-        console.log(this.state.heroProject)
     })
     .catch(err => console.log(err))
   }
@@ -36,11 +36,26 @@ class Projects extends React.Component {
     this.setState({
       heroProject: updatedProject
     })
-    console.log(this.state.heroProject)
   };
-  
-  render() {
 
+  render() {
+    
+    var scrolled=0;
+   
+              $(".projects__more").on("click" ,function(){
+                  scrolled=scrolled+799;
+                  $(".projectqueue").animate({
+                          scrollTop:  scrolled
+                  });
+              });
+              
+              $(".clips__button--back").on("click" ,function(){
+                  scrolled=scrolled-1897;
+                  $(".clips__video-container").animate({
+                          scrollTop:  scrolled
+                  });
+                  window.scrollTo(0,850);
+              });
     return (
       <div className="section" id="projects">
           <p className="title" style={{display: 'none'}}>projects</p>
@@ -64,7 +79,8 @@ class Projects extends React.Component {
                       <>
                           <h2 className="projects__display-name">{this.state.heroProject.name}</h2>
                           <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project"/>
-                          <div className="projects__display-description">{this.state.heroProject.description}</div>                        
+                          <div className="projects__display-description">{this.state.heroProject.description}</div>  
+                          <div className="projects__display-date">{this.state.heroProject.date}</div>                      
                             {this.state.projects[0] &&
                                 <TechStacks heroProject={this.state.heroProject} />}
                       </>
@@ -77,6 +93,9 @@ class Projects extends React.Component {
                       {this.state.projects.map(videoInfo => 
                             <ProjectQueue key={videoInfo.id} id={videoInfo.id} name={videoInfo.name} description={videoInfo.description} hero={videoInfo.hero} heroProject={this.state.heroProject} updateHero={this.updateHero}/>
                           )}
+                  </div>
+                  <div className="projects__more-container">
+                      <img src={Dots} className="projects__more" alt="Ellipses"/>
                   </div>
               </div>
           </div>
