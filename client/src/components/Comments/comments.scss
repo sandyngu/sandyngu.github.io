@@ -32,17 +32,70 @@
         }
     }
 
-    &box {
-        width: 50%;
+    &__box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        &-comments {
+            width: 30vw;
+            position: absolute;
+            top: 1;
+            margin-top: -45vw;
+            right: 8vw;
+        }
+        &-paper {
+            width: 35vw;
+            height: 14.5vw;
+
+            &1 {
+                margin: -1vw 0 0 -15vw;
+            }
+            &2 {
+                margin: -4.5vw 0 0 8vw;
+            }
+            &3 {
+                margin: -4.5vw 0 0 -15vw;
+            }
+            &4 {
+                margin: -4.5vw 0 0 8vw;
+            }
+        }
+    }
+    &__container {
     }
 
     &__text {
-        color: white;
+        color: black;
         text-align: left;
+        font-size: 0.75vw;
+        padding: 0 2vw;
+
+        &-text {
+            margin-bottom: 1vw;
+        }
+        &-name {
+            text-align: right;
+            font-weight: bold;
+            margin: 0;
+        }
+        &-position {
+            text-align: right;
+            font-weight: bold;
+            margin: 0;
+        }
     }
 
     &__logo {
         width: 1vw;
-        filter: grayscale(1) invert(1);
+        position: absolute;
+        top: 1;
+        margin: -0.25vw 0 0 0.3vw;
+        // filter: grayscale(1) invert(1);
+    }
+    &__typewriter {
+        width: 50vw;
+        height: 45vw;
+        margin-left: 5vw;
     }
 }
