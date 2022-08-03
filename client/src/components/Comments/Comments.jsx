@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Flowers from '../../assets/images/flowers3.png';
 import BrainStation from '../../assets/images/brainstation.png';
-import Typewriter from '../../assets/images/typewriter.png';
+import Typewriter from '../../assets/images/typewriter2.png';
 import Paper from '../../assets/images/paper.png';
 import './comments.scss';
 
@@ -38,6 +38,12 @@ class Comments extends React.Component {
               <img src={Flowers} alt="Flowers" className="comments__flowers flowers"/>
               <div className="comments__box">
                   <img src={Typewriter} className="comments__typewriter" alt="Typewriter" />
+                  <form className="comments__form" onSubmit={(e) => this.typeWriter(e)}>
+                      <textarea className="comments__form-input comments__form-input--comment" placeholder="Say a few words..."></textarea>
+                      <br className="comments__form-break"/><input className="comments__form-input comments__form-input--name" placeholder="Signature"></input>
+                      <br className="comments__form-break"/><input className="comments__form-input comments__form-input--position" placeholder="Position"></input>
+                      <br className="comments__form-break"/><br className="comments__form-break"/><button className="comments__form-button" type="submit">Submit</button>
+                  </form>
                   <div className="comments__box-paper-container">
                       <img src={Paper} className="comments__box-paper comments__box-paper1" alt="Ripped Paper"/>
                       <img src={Paper} className="comments__box-paper comments__box-paper2" alt="Ripped Paper"/>
@@ -45,15 +51,6 @@ class Comments extends React.Component {
                       <img src={Paper} className="comments__box-paper comments__box-paper4" alt="Ripped Paper"/>
                   </div>
               </div>
-              {/* <form className="comments__box-form" onSubmit={(e) => this.typeWriter(e)}>
-                  <label className="comments__form-label">Name:</label>
-                  <br className="comments__form-break"/><input className="comments__form-input comments__form-input--name"></input>
-                  <br className="comments__form-break"/><label className="comments__form-label">Position:</label>
-                  <br className="comments__form-break"/><input className="comments__form-input comments__form-input--position"></input>
-                  <br className="comments__form-break"/><label className="comments__form-label">Comment:</label>
-                  <br className="comments__form-break"/><textarea className="comments__form-input comments__form-input--comment"></textarea>
-                  <br className="comments__form-break"/><br className="comments__form-break"/><button className="comments__form-button" type="submit">Submit</button>
-              </form> */}
               <div className="comments__box-comments">
                   {this.state.comments !== null &&
                   <>

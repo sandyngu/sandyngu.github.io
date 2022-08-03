@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import Logo from '../../assets/images/logo.png'
 import FlowerBorder from '../../assets/images/flowerborder.png'
 import './headerbar.scss';
@@ -13,6 +14,16 @@ function HeaderBar(props) {
                   document.body.scrollTop || 0;
     element.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 2));
     element2.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 2));
+  });
+  
+  $(function() {
+    $(window).scroll(function() {
+        if($(window).scrollTop() > $(".parallax1").offset().top+$(".parallax1").height()){
+          $(".headerbar__image-container").hide();
+        }else{
+          $(".headerbar__image-container").show(); 
+        }
+    });
   });
 
     return (
