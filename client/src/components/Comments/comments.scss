@@ -42,26 +42,22 @@
             width: 30vw;
             position: absolute;
             top: 1;
-            margin-top: -45vw;
-            right: 8vw;
+            margin-top: -35.25vw;
+            right: 9vw;
+            height: 25vw;
+            overflow: hidden;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
         
         &-paper {
             width: 35vw;
-            height: 14.5vw;
-            
-            &1 {
-                margin: -1vw 0 0 -15vw;
-            }
-            &2 {
-                margin: -4.5vw 0 0 8vw;
-            }
-            &3 {
-                margin: -4.5vw 0 0 -15vw;
-            }
-            &4 {
-                margin: -4.5vw 0 0 8vw;
-            }
+            height: 35vw;
+            margin: 4vw 5vw 0 0;
+            filter: saturate(30%);
         }
     }
 
@@ -69,21 +65,21 @@
         position: absolute;
         top: 1;
         margin-top: 2.5vw;
-        left: 18vw;
-        width: 18.5vw;
+        left: 21.5vw;
+        width: 21vw;
         z-index: 998;
 
         &-label {
             font-size: 0.5vw;
         }
         &-input {
-            width: 18.5vw;
+            width: 21vw;
             font-family: 'Courier New', Courier, monospace;
             border: none;
             outline: none;
 
             &--comment {
-                height: 11vw;
+                height: 10vw;
                 resize: none;
                 font-weight: bold;
             }
@@ -115,26 +111,35 @@
     }
 
     &__container {
+        height: 25vw;
     }
 
     &__text {
         color: black;
         text-align: left;
-        font-size: 0.75vw;
+        font-size: 0.825vw;
         padding: 0 2vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
 
         &-text {
             margin-bottom: 1vw;
+            text-indent: 10%;
+            line-height: 1.15vw;
         }
         &-name {
             text-align: right;
             font-weight: bold;
-            margin: 0;
+            margin: 0.25vw 0;
+            font-size: 1.1vw;
+            font-family: 'Kintanya';
         }
         &-position {
             text-align: right;
             font-weight: bold;
             margin: 0;
+            font-size: 1.1vw;
+            font-family: 'Kintanya';
         }
     }
 
@@ -142,13 +147,13 @@
         width: 1vw;
         position: absolute;
         top: 1;
-        margin: -0.25vw 0 0 0.3vw;
+        margin: 0.15vw 0 0 0.3vw;
         // filter: grayscale(1) invert(1);
     }
     &__typewriter {
         position: relative;
         width: 50vw;
-        height: 45vw;
+        height: 43vw;
         margin-left: 5vw;
     }
 }

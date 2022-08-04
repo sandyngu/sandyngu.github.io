@@ -3,7 +3,7 @@ import axios from 'axios';
 import Flowers from '../../assets/images/flowers3.png';
 import BrainStation from '../../assets/images/brainstation.png';
 import Typewriter from '../../assets/images/typewriter2.png';
-import Paper from '../../assets/images/paper.png';
+import Paper from '../../assets/images/paper3.png';
 import './comments.scss';
 
 class Comments extends React.Component {
@@ -41,14 +41,11 @@ class Comments extends React.Component {
                   <form className="comments__form" onSubmit={(e) => this.typeWriter(e)}>
                       <textarea className="comments__form-input comments__form-input--comment" placeholder="Say a few words..."></textarea>
                       <br className="comments__form-break"/><input className="comments__form-input comments__form-input--name" placeholder="Signature"></input>
-                      <br className="comments__form-break"/><input className="comments__form-input comments__form-input--position" placeholder="Position"></input>
+                      <br className="comments__form-break"/><input className="comments__form-input comments__form-input--position" placeholder="Title/Position"></input>
                       <br className="comments__form-break"/><br className="comments__form-break"/><button className="comments__form-button" type="submit">Submit</button>
                   </form>
                   <div className="comments__box-paper-container">
                       <img src={Paper} className="comments__box-paper comments__box-paper1" alt="Ripped Paper"/>
-                      <img src={Paper} className="comments__box-paper comments__box-paper2" alt="Ripped Paper"/>
-                      <img src={Paper} className="comments__box-paper comments__box-paper3" alt="Ripped Paper"/>
-                      <img src={Paper} className="comments__box-paper comments__box-paper4" alt="Ripped Paper"/>
                   </div>
               </div>
               <div className="comments__box-comments">
@@ -56,7 +53,7 @@ class Comments extends React.Component {
                   <>
                         {this.state.comments.map(comment => 
                         <div className="comments__container" key={comment.id}>
-                              <p className="comments__text comments__text-text" id="text">{comment.comment}</p>
+                              <p className="comments__text comments__text-text" id="text">"{comment.comment}"</p>
                               <p className="comments__text comments__text-name">~ {comment.name}</p>
                               <p className="comments__text comments__text-position">{comment.position} <img src={BrainStation} alt="BrainStation Logo" className="comments__logo"/></p>
                         </div>
