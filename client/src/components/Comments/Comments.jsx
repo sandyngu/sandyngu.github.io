@@ -27,7 +27,7 @@ class Comments extends React.Component {
   render () {
 
     return (
-      <div className="section">
+      <div className="section" id="comments">
           <p className="title" style={{display: 'none'}}>comments</p>
           <div className="parallax parallax5">
               <h2 className="comments__section-title box-title">feedback</h2>

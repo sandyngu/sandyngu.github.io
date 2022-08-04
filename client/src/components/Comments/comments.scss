@@ -1,15 +1,13 @@
 @import '../../partials/global';
 
 .comments {
-    height: 80vw;
+    height: 75vw;
     background-color: rgb(165, 180, 194);
 
     &__heading {
-        // background-image: url('../../assets/images/haku2.gif');
         background-size: 30%;
         background-position: 5% 35%;   
         background-clip: text;
-        // color: transparent;
         margin-right: 30vw;
         padding-top: 10vw;
         margin-top: 0;    

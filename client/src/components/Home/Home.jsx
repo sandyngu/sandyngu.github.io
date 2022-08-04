@@ -91,13 +91,23 @@ class Home extends React.Component {
       headerTitle: "contact"
     })
   }
+  changeContact = () => {
+    this.setState({
+      headerTitle: "contact"
+    })
+  }
+  changeComments = () => {
+    this.setState({
+      headerTitle: "comments"
+    })
+  }
   
   render() {
     
     return (
       <div className="home">
         <HeaderBar state={this.state} logoHover={this.logoHover}/>
-        <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact}/>
+        <NavBar changeHeaderBar={this.changeHeaderBar} changeAboutMe={this.changeAboutMe} changeProjects={this.changeProjects} changeContact={this.changeContact} changeComments={this.changeComments}/>
         <Welcome />
         <AboutMe state={this.state}/>
         <Projects state={this.state}/>

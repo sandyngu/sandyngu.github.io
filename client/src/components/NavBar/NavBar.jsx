@@ -9,6 +9,7 @@ function NavBar(props) {
         <a href="#aboutme"><li className="navbar__list-item" onClick={()=>props.changeAboutMe()}>&lt; about me /&gt;</li></a>
         <a href="#projects"><li className="navbar__list-item" onClick={()=>props.changeProjects()}>&lt; projects /&gt;</li></a>
         <a href="#contact"><li className="navbar__list-item" onClick={()=>props.changeContact()}>&lt; contact /&gt;</li></a>
+        <a href="#comments"><li className="navbar__list-item" onClick={()=>props.changeComments()}>&lt; comments /&gt;</li></a>
       </ul>
     </div>
   )
