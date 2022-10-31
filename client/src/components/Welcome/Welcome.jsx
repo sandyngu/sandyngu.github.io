@@ -1,5 +1,6 @@
 import React from 'react';
 import Flowers from '../../assets/images/flowers3.png';
+import Blob from '../../assets/images/blob.svg';
 import './welcome.scss';
 
 function Welcome() {
@@ -7,6 +8,7 @@ function Welcome() {
     <div className="welcome section" id="welcome">
         <p className="title" style={{display: 'none'}}>why, hello there</p>
         <div className="parallax parallax0">
+        <img src={Blob} className="blob" alt="Blob"/>
         <h1 className="new new1">andy</h1>
             <h1 className="new new2">Nguyen</h1>
             <h1 className="big">S</h1>
