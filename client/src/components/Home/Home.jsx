@@ -22,11 +22,9 @@ class Home extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:5000/comments')
         .then(res => {
-            console.log(res.data)
             this.setState({
                 comments: res.data
             });
-            console.log(this.state.comments)
         })
         .catch(err => console.log(err))
 
@@ -39,13 +37,13 @@ class Home extends React.Component {
                     return; //break the loop
                 }
             });
-        });
+          });
+      });
     
         $(document).ready(function () {
             $(window).trigger('scroll'); // init the value
         });
-      });
-  };
+    };
 
   fadeMenu() {
     document.querySelector('.navbar').classList.add('fade-in');

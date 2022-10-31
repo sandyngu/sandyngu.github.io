@@ -20,7 +20,7 @@
         opacity: 0.9;
         background-color: rgb(216, 225, 233);
         color: white;
-        border-radius: 25px;
+        // border-radius: 25px;
         width: 20vw;
         height: 17vw;
         margin: 9vw 2vw;
@@ -73,8 +73,8 @@
         &-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 0 10vw;
+            justify-content: space-around;
+            margin: 0 12vw;
             padding-top: 9.5vw;
         }
     }

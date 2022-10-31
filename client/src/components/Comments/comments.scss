@@ -42,7 +42,7 @@
             top: 1;
             margin-top: -35.25vw;
             right: 9vw;
-            height: 25vw;
+            height: 26vw;
             overflow: hidden;
             overflow-y: scroll;
 
@@ -56,6 +56,7 @@
             height: 35vw;
             margin: 4vw 5vw 0 0;
             filter: saturate(30%);
+            position: relative;
         }
     }
 
@@ -109,7 +110,7 @@
     }
 
     &__container {
-        height: 25vw;
+        height: 23.25vw;
     }
 
     &__text {
@@ -138,6 +139,12 @@
             margin: 0;
             font-size: 1.1vw;
             font-family: 'Kintanya';
+        }
+        &-count {
+            position: absolute;
+            top: 1;
+            margin-top: 7vw;
+            font-family: 'Courier New', Courier, monospace;
         }
     }
 

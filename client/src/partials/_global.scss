@@ -83,7 +83,7 @@ svg {
 
 .parallax {
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 180% 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 30vw;
@@ -91,24 +91,25 @@ svg {
     border-left: none;
     border-right: none;
 
+    &0 {
+        background-image: url('../assets/images/images/toronto2_01.jpg');
+        height: 50vw;
+        border-top: none;
+    }
     &1 {
-        background-image: url('../assets/images/images/toronto_01.jpg');
-        text-align: center;
-        margin: auto;
-        vertical-align: middle;
-        align-items: center;
+        background-image: url('../assets/images/images/toronto2_02.jpg');
     }
     &2 {
-        background-image: url('../assets/images/images/toronto_02.jpg');
+        background-image: url('../assets/images/images/toronto2_03.jpg');
         margin-top: 42vw;
     }
     &3 {
-        background-image: url('../assets/images/images/toronto_03.jpg');
+        background-image: url('../assets/images/images/toronto2_04.jpg');
     }
     &4 {
-        background-image: url('../assets/images/images/toronto_04.jpg');
+        background-image: url('../assets/images/images/toronto2_05.jpg');
     }
     &5 {
-        background-image: url('../assets/images/images/toronto_05.jpg');
+        background-image: url('../assets/images/images/toronto2_06.jpg');
     }
 }

@@ -11,8 +11,8 @@ a {
 }
 
 .navbar {
-    position: sticky;
-    top: 7.89vw;
+    position: fixed;
+    top: 7.75vw;
     z-index: 999;
     width: 100%;
     height: 50px;
@@ -27,10 +27,6 @@ a {
         color: white;
         list-style-type: none;
         margin: 0;
-
-        &-item {
-            
-        }
     }
 }
 
