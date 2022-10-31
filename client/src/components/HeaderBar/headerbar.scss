@@ -71,12 +71,13 @@
         }
     }
     &__image {
-        width: 50%;
+        // width: 50%;
+        width: 33.3%;
 
         &-container {
             position: absolute;
             top: 1;
-            margin-top: 11vw;
+            margin-top: 10vw;
             display: flex;
             opacity: 0.8
         }

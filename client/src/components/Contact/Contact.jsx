@@ -82,7 +82,7 @@ function Contact() {
                     <br/><div className="contact__button-text contact__button-text1">linkedin</div>
                 </div>
               </a>
-              <a href="mailto:sandy_nguyen@live.ca">
+              <a href="mailto:contact@sandynguyen.ca">
                 <div className="contact__button contact__button2" onMouseOver={()=>showEmail()} onMouseLeave={()=>hideEmail()}>
                     <img src={Email} className="contact__button-logo contact__button-logo2" alt="Email Logo" />
                     <br/><div className="contact__button-text contact__button-text2">e-mail</div>
