@@ -77,7 +77,11 @@ class Projects extends React.Component {
                       <div className="projects__postit-title">TechStacks</div>
                       {this.state.projects[0] &&
                       <>
-                          <h2 className="projects__display-name">{this.state.heroProject.name}</h2>
+                          {this.state.heroProject.url ? 
+                          <h2 className="projects__display-name"><a href={this.state.heroProject.url} target="_blank" rel="noreferrer" className="projects__display-link">{this.state.heroProject.name}</a> ← click me</h2>
+                          :<h2 className="projects__display-name">{this.state.heroProject.name}</h2> 
+                          }
+                          
                           <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project"/>
                           <div className="projects__display-description">{this.state.heroProject.description}</div>  
                           <div className="projects__display-date">{this.state.heroProject.date}</div>                      
