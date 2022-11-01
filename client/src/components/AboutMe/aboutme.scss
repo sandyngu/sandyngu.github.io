@@ -95,6 +95,7 @@
                 right: 10vw;
                 margin-top: 0vw;
                 transform: rotate(20deg);
+                z-index: 997;
             }
             &3 {
                 width: 18vw;
@@ -104,16 +105,36 @@
             }
             &4 {
                 width: 15vw;
-                right: 80vw;
-                transform: rotate(-10deg);
-                margin-top: 80vw;
-                z-index: 999;
+                right: 5vw;
+                margin-top: -16vw;
+                transform: rotate(10deg);
+                z-index: 996;
             }
             &5 {
+                width: 15vw;
+                right: 3vw;
+                margin-top: 18vw;
+                transform: rotate(-16deg);
+                z-index:998;
+            }
+            &6 {
+                width: 15vw;
+                right: 80vw;
+                transform: rotate(-10deg);
+                margin-top: 75vw;
+                z-index: 999;
+            }
+            &7 {
                 width: 25vw;
-                right: 55vw;
-                margin-top: 82vw;
-                transform: rotate(20deg);
+                right: 52vw;
+                margin-top: 77vw;
+                transform: rotate(15deg);
+            }
+            &8 {
+                width: 21vw;
+                right: 66vw;
+                margin-top: 90vw;
+                transform: rotate(-5deg);
             }
         }
         &-photo {
