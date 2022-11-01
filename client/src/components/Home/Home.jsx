@@ -89,11 +89,6 @@ class Home extends React.Component {
       headerTitle: "contact"
     })
   }
-  changeContact = () => {
-    this.setState({
-      headerTitle: "contact"
-    })
-  }
   changeComments = () => {
     this.setState({
       headerTitle: "comments"

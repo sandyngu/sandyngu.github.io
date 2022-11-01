@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import $ from 'jquery';
 import Flowers from '../../assets/images/flowers3.png';
 import BrainStation from '../../assets/images/brainstation.png';
 import Typewriter from '../../assets/images/typewriter2.png';

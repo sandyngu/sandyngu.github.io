@@ -80,7 +80,62 @@
                 background-image: url('../../assets/images/spiritedaway.gif'); 
                 background-position: 10% 30%;
             }
+        }
+        &-polaroid {
+            position: absolute;
+
+            &1 {
+                width: 20vw;
+                right: 28vw;
+                transform: rotate(-10deg);
+                margin-top: -17vw;
+            }
+            &2 {
+                width: 25vw;
+                right: 10vw;
+                margin-top: 0vw;
+                transform: rotate(20deg);
+            }
+            &3 {
+                width: 18vw;
+                right: 25vw;
+                margin-top: 16vw;
+                transform: rotate(10deg);
+            }
+            &4 {
+                width: 15vw;
+                right: 80vw;
+                transform: rotate(-10deg);
+                margin-top: 80vw;
+                z-index: 999;
+            }
+            &5 {
+                width: 25vw;
+                right: 55vw;
+                margin-top: 82vw;
+                transform: rotate(20deg);
+            }
+        }
+        &-photo {
+            position: absolute;
             
+            &1 {
+                width: 20vw;
+                transform: rotate(-10deg);
+                margin-top: 5vw;
+            }
+            &2 {
+                width: 25vw;
+                right: 10vw;
+                margin-top: 22vw;
+                transform: rotate(20deg);
+            }
+            &3 {
+                width: 18vw;
+                right: 25vw;
+                margin-top: 37vw;
+                transform: rotate(10deg);
+            }
         }
     }
     &__text {
