@@ -8,6 +8,7 @@ import Resume from '../../assets/images/resume.png'
 import Tulip from '../../assets/images/tulip.png'
 import Arrows from '../../assets/images/2arrow.png'
 import Insta from '../../assets/images/insta.png'
+import Polaroid from '../../assets/images/rectangle-polaroid.png';
 import './contact.scss';
 
 function Contact() {
@@ -15,51 +16,61 @@ function Contact() {
   function showLinkedIn() {
     document.querySelector('.contact__button-text1').style.display="inline-block";
     $(".contact__button-logo1").css("opacity", 1)
+    $(".contact__button1").css("filter", "invert(0.8)");
   };
 
   function showEmail() {
     document.querySelector('.contact__button-text2').style.display="inline-block";
     $(".contact__button-logo2").css("opacity", 1)
+    $(".contact__button2").css("filter", "invert(0.8)");
   }
 
   function showGitHub() {
     document.querySelector('.contact__button-text3').style.display="inline-block";
     $(".contact__button-logo3").css("opacity", 1)
+    $(".contact__button3").css("filter", "invert(0.8)");
   }
 
   function showResume() {
     document.querySelector('.contact__button-text4').style.display="inline-block";
     $(".contact__button-logo4").css("opacity", 1)
+    $(".contact__button4").css("filter", "invert(0.8)");
   }
 
   function showSocialMedia() {
     document.querySelector('.contact__button-text5').style.display="inline-block";
     $(".contact__button-logo5").css("opacity", 1)
+    $(".contact__button5").css("filter", "invert(0.8)");
   }
 
   function hideLinkedIn() {
     document.querySelector('.contact__button-text1').style.display="none";
     $(".contact__button-logo1").css("opacity", 0.7)
+    $(".contact__button1").css("filter", "grayscale(60%)");
   };
 
   function hideEmail() {
     document.querySelector('.contact__button-text2').style.display="none";
     $(".contact__button-logo2").css("opacity", 0.7)
+    $(".contact__button2").css("filter", "grayscale(60%)");
   }
 
   function hideGitHub() {
     document.querySelector('.contact__button-text3').style.display="none";
     $(".contact__button-logo3").css("opacity", 0.7)
+    $(".contact__button3").css("filter", "grayscale(60%)");
   }
 
   function hideResume() {
     document.querySelector('.contact__button-text4').style.display="none";
     $(".contact__button-logo4").css("opacity", 0.7)
+    $(".contact__button4").css("filter", "grayscale(60%)");
   }
 
   function hideSocialMedia() {
     document.querySelector('.contact__button-text5').style.display="none";
     $(".contact__button-logo5").css("opacity", 0.7)
+    $(".contact__button5").css("filter", "grayscale(60%)");
   }
 
   return (
@@ -77,38 +88,47 @@ function Contact() {
             <img src={Tulip} className="contact__image" alt="Tulip"/>
             <div className="contact__button-container">
               <a href="https://www.linkedin.com/in/sandyngu/" target="_blank" rel="noreferrer">
-                <div className="contact__button contact__button1" onMouseOver={()=>showLinkedIn()} onMouseLeave={()=>hideLinkedIn()}>
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid1" alt="" onMouseOver={()=>showLinkedIn()} onMouseLeave={()=>hideLinkedIn()}/>
+                <div className="contact__button contact__button1">
                     <img src={LinkedIn} className="contact__button-logo contact__button-logo1" alt="LinkedIn Logo" />
                     <br/><div className="contact__button-text contact__button-text1">linkedin</div>
                 </div>
               </a>
-              <a href="mailto:contact@sandynguyen.ca">
-                <div className="contact__button contact__button2" onMouseOver={()=>showEmail()} onMouseLeave={()=>hideEmail()}>
+              <a href="mailto:contact@sandynguyen.ca" className="contact__button-link">
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid2" alt="" onMouseOver={()=>showEmail()} onMouseLeave={()=>hideEmail()}/>
+                <div className="contact__button contact__button2">
                     <img src={Email} className="contact__button-logo contact__button-logo2" alt="Email Logo" />
                     <br/><div className="contact__button-text contact__button-text2">e-mail</div>
                 </div>
               </a>
               <a href="https://github.com/sandyngu" target="_blank" rel="noreferrer">
-                <div className="contact__button contact__button3" onMouseOver={()=>showGitHub()} onMouseLeave={()=>hideGitHub()}>
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid3" alt="" onMouseOver={()=>showGitHub()} onMouseLeave={()=>hideGitHub()}/>
+                <div className="contact__button contact__button3">
                     <img src={GitHub} className="contact__button-logo contact__button-logo3" alt="GitHub Logo" />
                     <br/><div className="contact__button-text contact__button-text3">github</div>
                 </div>
               </a>
               <a href={ResumeDoc} target="_blank" rel="noreferrer">
-                <div className="contact__button contact__button4" onMouseOver={()=>showResume()} onMouseLeave={()=>hideResume()}>
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid4" alt="" onMouseOver={()=>showResume()} onMouseLeave={()=>hideResume()}/>
+                <div className="contact__button contact__button4">
                     <img src={Resume} className="contact__button-logo contact__button-logo4" alt="Resume Logo" />
                     <br/><div className="contact__button-text contact__button-text4">resume</div>
                 </div>
               </a>
               <a href="https://instagram.com/sandyngu" target="_blank" rel="noreferrer">
-                <div className="contact__button contact__button5" onMouseOver={()=>showSocialMedia()} onMouseLeave={()=>hideSocialMedia()}>
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid5" alt="" onMouseOver={()=>showSocialMedia()} onMouseLeave={()=>hideSocialMedia()}/>
+                <div className="contact__button contact__button5">
                     <img src={Insta} className="contact__button-logo contact__button-logo5" alt="Instagram Logo" />
                     <br/><div className="contact__button-text contact__button-text5">socials</div>
                 </div>
               </a>
+              <a href="https://instagram.com/sandyngu" target="_blank" rel="noreferrer">
+                <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid6" alt=""/>
                 <div className="contact__button">
     hi
                 </div>
+
+              </a>
             </div>
         </div>
     </div>
