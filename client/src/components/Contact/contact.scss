@@ -18,26 +18,46 @@
         background-position: center;
         filter: grayscale(60%);
         opacity: 0.9;
-        color: white;
-        width: 20vw;
-        height: 17vw;
-        margin: 9vw 2vw;
-        z-index: 999;
+        color: black;
+        width: 19.5vw;
+        height: 16.5vw;
+        margin: 0.25vw 2vw;
+        z-index: 998;
 
         &1 {
             background-image: url('../../assets/images/linkedin2.png');
+
+            &:hover {
+                background-image: url('../../assets/images/linkedin2-invert.png');
+            }
         }
         &2 {
             background-image: url('../../assets/images/email2.jpg');
+
+            &:hover {
+                background-image: url('../../assets/images/email2-invert.jpg');
+            }
         }
         &3 {
             background-image: url('../../assets/images/github2.jpg');
+
+            &:hover {
+                background-image: url('../../assets/images/github2-invert.jpg');
+            }
         }
         &4 {
-            background-image: url('../../assets/images/resume2.png');
+            background-image: url('../../assets/images/job search.png');
+
+            &:hover {
+                background-image: url('../../assets/images/job search-invert.png');
+            }
         }
         &5 {
             background-image: url('../../assets/images/socialmedia.png');
+
+            &:hover {
+                background-image: url('../../assets/images/socialmedia-invert.png');
+            }
         }
 
         &:hover {
@@ -47,20 +67,23 @@
         }
 
         &-logo {
-            width: 6vw;
-            margin-top: 5.5vw;
+            width: 3vw;
+            height: 3vw;
             opacity: 0;
+            margin-top: 0.25vw;
         }
         &-text {
-            font-size: 3vw;
-            margin-top: 5vw;
-            display: none;
+            font-size: 2.5vw;
+            margin-top: 11.75vw;
             font-family: 'Kintanya';
             padding: 0 2vw;
             width: 80%;
             text-align: center;
             font-weight: normal;
             z-index: 999;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         &-container {
@@ -109,13 +132,16 @@
                 margin-top: 53.5vw;
             }
         }
+        &-link {
+            display: flex;
+        }
     }
 
     &__image {
         width: 20vw;
         position: absolute;
         top: 1;
-        margin-top: 33vw;
+        margin-top: 35vw;
         left: 35%;
         transform: scaleX(-1);
     }
@@ -143,7 +169,6 @@
 
 .show {
     display: inline-block;
-    // position: absolute;
     z-index: 999;
 }
 

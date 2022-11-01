@@ -1,0 +1,15 @@
+@import '../../partials/global';
+
+.contactbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5.5vw 0 17vw 0;
+
+    &__polaroid {
+        position: absolute;
+        width: 21vw;
+        height: 19vw;
+        z-index: 995;
+    }
+}
