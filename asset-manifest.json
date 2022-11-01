@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1cbe467.css",
-    "main.js": "/static/js/main.f78fbfc6.js",
+    "main.css": "/static/css/main.af86a8b5.css",
+    "main.js": "/static/js/main.ce6fc9c2.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/sorafull.gif": "/static/media/sorafull.c78ad0705130ca470904.gif",
     "static/media/rainbow5a.gif": "/static/media/rainbow5a.3300809fb14884341572.gif",
@@ -24,6 +24,7 @@
     "static/media/toronto2_06.jpg": "/static/media/toronto2_06.61354f5e7f360bf63bfa.jpg",
     "static/media/linkedin2.png": "/static/media/linkedin2.2c24cf0fdb81990006de.png",
     "static/media/AnticallyRegular-OVox8.ttf": "/static/media/AnticallyRegular-OVox8.28f31f8d70f98c1592a6.ttf",
+    "static/media/linkedin2-invert.png": "/static/media/linkedin2-invert.1183a5cf47dbce0b92ba.png",
     "static/media/GraphikBold.otf": "/static/media/GraphikBold.e78d3d4f87bc060c0a1a.otf",
     "static/media/GraphikMedium.otf": "/static/media/GraphikMedium.f58d53eb72d7239d4ca8.otf",
     "static/media/insta.png": "/static/media/insta.70ec9a0ad4e6a8fd0d13.png",
@@ -31,10 +32,13 @@
     "static/media/flowers3.png": "/static/media/flowers3.e290dae082317b209869.png",
     "static/media/College Halo.ttf": "/static/media/College Halo.365ab84df1edcf7ea866.ttf",
     "static/media/Sandy Nguyen - Resume.pdf": "/static/media/Sandy Nguyen - Resume.17bde757555436772725.pdf",
+    "static/media/email2-invert.jpg": "/static/media/email2-invert.6ed45e443e200800f75d.jpg",
     "static/media/rectangle-polaroid.png": "/static/media/rectangle-polaroid.79891b60e37231d7aa3b.png",
     "static/media/tulip.png": "/static/media/tulip.fd95eff9166d52f0d9b6.png",
+    "static/media/job search-invert.png": "/static/media/job search-invert.7901e1c1650fb54c9ee5.png",
+    "static/media/job search.png": "/static/media/job search.f499017b6139af393b9d.png",
     "static/media/socialmedia.png": "/static/media/socialmedia.06700567240924f8c464.png",
-    "static/media/resume2.png": "/static/media/resume2.127aef280a37a52fe015.png",
+    "static/media/socialmedia-invert.png": "/static/media/socialmedia-invert.95f634ddcf9bb8848b19.png",
     "static/media/Kintanya.ttf": "/static/media/Kintanya.39aa7a75d0374b8cb1ee.ttf",
     "static/media/email2.jpg": "/static/media/email2.e7ad512def948f4b8ba0.jpg",
     "static/media/Comication.TTF": "/static/media/Comication.638cf2bd0f4cfaf51a33.TTF",
@@ -44,6 +48,7 @@
     "static/media/react.png": "/static/media/react.46aaf41333b6be3625f1.png",
     "static/media/sass.png": "/static/media/sass.c0eec2656ff59a2a3261.png",
     "static/media/paper.png": "/static/media/paper.de5aaa09adbbbeddda01.png",
+    "static/media/github2-invert.jpg": "/static/media/github2-invert.811dbe6238ad292dec33.jpg",
     "static/media/express.png": "/static/media/express.4a162ada5ce50f8c2912.png",
     "static/media/paper3.png": "/static/media/paper3.05410241fc10bb9bc088.png",
     "static/media/My_handwriting.ttf": "/static/media/My_handwriting.af315a0e5effacf9dc32.ttf",
@@ -52,7 +57,7 @@
     "static/media/mysql.png": "/static/media/mysql.ed7bfeca76bdc2852941.png",
     "static/media/knex.png": "/static/media/knex.a2f2054f08fb49f7d6d1.png",
     "static/media/brainstation.png": "/static/media/brainstation.a225faa0ebb742431700.png",
-    "static/media/resume3.png": "/static/media/resume3.499acc3abdc975e278ea.png",
+    "static/media/resume3.png": "/static/media/resume3.ae3c6cc9acc03e469bbd.png",
     "static/media/bookshelf.png": "/static/media/bookshelf.65d176559f9dcd6790c2.png",
     "static/media/github2.jpg": "/static/media/github2.5b02adc78b047638a593.jpg",
     "static/media/css.png": "/static/media/css.672ceee7c098135c5988.png",
@@ -61,12 +66,12 @@
     "static/media/2arrow.png": "/static/media/2arrow.cd088a9742330f56fb42.png",
     "index.html": "/index.html",
     "static/media/blob.svg": "/static/media/blob.26e37f9c5d12f3d29b8850cf65da0162.svg",
-    "main.e1cbe467.css.map": "/static/css/main.e1cbe467.css.map",
-    "main.f78fbfc6.js.map": "/static/js/main.f78fbfc6.js.map",
+    "main.af86a8b5.css.map": "/static/css/main.af86a8b5.css.map",
+    "main.ce6fc9c2.js.map": "/static/js/main.ce6fc9c2.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1cbe467.css",
-    "static/js/main.f78fbfc6.js"
+    "static/css/main.af86a8b5.css",
+    "static/js/main.ce6fc9c2.js"
   ]
 }
