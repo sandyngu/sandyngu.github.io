@@ -99,14 +99,14 @@
     font-size: 10vw;
     position: absolute;
     font-family: 'autumn';
-    // background-image: url('../../assets/images/niagara.jpg');
-    background-position: center;
-    background-size: 75%;
-    background-attachment: fixed;
+    background-image: url('../../assets/images/niagara.jpg');
+    background-size: center;
+    background-position: 30% 100%;
+    // background-attachment: fixed;
     background-repeat: no-repeat;
     background-clip: text;
-    // color: transparent;
-    color: white;
+    color: transparent;
+    // color: white;
     top:1;
     margin-top: 13vw;
     margin-left: auto;
@@ -114,33 +114,37 @@
     left: 0;
     right: 0;
     text-align: center;
-    // filter: saturate(50%) brightness(80%);
-    // filter: saturate(50%) brightness(50%);
+    filter: saturate(25%) brightness(150%);
     z-index: 998;
 
     &2 {
         margin-top: 24vw;
         font-size: 10vw;
-        left: 10vw;
+        left: 22vw;
     }
 }
 
 .big {
-    font-size: 20vw;
+    font-size: 22vw;
     position: absolute;
     font-family: 'autumn';
-    // background-image: url('../../assets/images/vietnam2.jpg');
-    background-size: 70% 105%;
-    background-position: -35% 165%;
+    // background-image: url('../../assets/images/bouquet2.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-clip: text;
     // color: transparent;
     color: white;
     top:1;
-    left: 31vw;
-    margin-top: 7vw;
+    left: 29.75vw;
+    margin-top: 6vw;
     // filter: saturate(50%);
-    filter: saturate(50%) brightness(90%);
+    // filter: saturate(50%) brightness(90%);
     z-index: 997;
+
+    &2 {
+        font-size: 15vw;
+        left: 38vw;
+        margin-top: 22vw;
+    }
 }

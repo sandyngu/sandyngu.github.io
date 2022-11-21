@@ -33,9 +33,10 @@ function HeaderBar(props) {
       <>
       <div className="parallax parallax0">
           <img src={Blob} className="blob" alt="Blob"/>
+          <h1 className="big big1">S</h1>
           <h1 className="new new1">andy</h1>
-              <h1 className="new new2">Nguyen</h1>
-              <h1 className="big">S</h1>
+          <h1 className="big big2">N</h1>
+          <h1 className="new new2">guyen</h1>
       </div>
       <div className='headerbar'>
           <img src={Logo} className="headerbar__logo" alt="Logo"/>
