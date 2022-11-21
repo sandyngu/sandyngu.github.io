@@ -2,26 +2,24 @@
 
 .contact {
     height: 88vw;
-    background-color: rgb(178, 187, 192);
+    background-color: #e9edf0;
 
     &__heading {
-        // background-image: url('../../assets/images/sora.gif');
         background-size: 75%;
         background-position: 50% 30%;
         background-clip: text;
-        // color: transparent;
         margin: 0;
     }
     &__button {
         background-repeat: no-repeat;
         background-size: 100% 85%;
         background-position: center;
-        filter: grayscale(60%);
+        filter: grayscale(40%);
         opacity: 0.9;
         color: black;
-        width: 19.5vw;
+        width: 19.25vw;
         height: 16.5vw;
-        margin: 0.25vw 2vw;
+        margin: 0.25vw 0;
         z-index: 998;
 
         &1 {
@@ -53,10 +51,10 @@
             }
         }
         &5 {
-            background-image: url('../../assets/images/socialmedia.png');
+            background-image: url('../../assets/images/social2.png');
 
             &:hover {
-                background-image: url('../../assets/images/socialmedia-invert.png');
+                background-image: url('../../assets/images/social2-invert.png');
             }
         }
 
@@ -91,47 +89,10 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 0 12vw;
-            padding-top: 9.5vw;
+            padding-top: 10vw;
             position: relative;
         }
 
-        &-polaroid {
-            position: absolute;
-            width: 21vw;
-            height: 19vw;
-            z-index: 995;
-            
-            &1{
-                left: 2vw;
-                top: 0;
-                margin-top: 18.5vw;
-            }
-            &2 {
-                left: 27vw;
-                top: 0;
-                margin-top: 18.5vw;
-            }
-            &3 {
-                left: 52vw;
-                top: 0;
-                margin-top: 18.5vw;
-            }
-            &4 {
-                left: 2vw;
-                top: 0;
-                margin-top: 53.5vw;
-            }
-            &5 {
-                left: 27vw;
-                top: 0;
-                margin-top: 53.5vw;
-            }
-            &6 {
-                left: 52vw;
-                top: 0;
-                margin-top: 53.5vw;
-            }
-        }
         &-link {
             display: flex;
         }

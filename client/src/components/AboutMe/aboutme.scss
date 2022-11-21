@@ -2,7 +2,7 @@
 
 .aboutme {
     height: 130vw;
-    background-color: rgb(202, 215, 230);
+    background-color: $background;
     margin: 0;
 
     &__flowers {
@@ -122,7 +122,7 @@
                 right: 80vw;
                 transform: rotate(-10deg);
                 margin-top: 75vw;
-                z-index: 999;
+                z-index: 998;
             }
             &7 {
                 width: 25vw;
@@ -170,6 +170,7 @@
             width: 39%;
             font-weight: bold;
             z-index: 997;
+            margin-left: 12vw;
         }
     }
     &--bold {
@@ -179,23 +180,28 @@
 
 .valorant {
     font-family: 'Valorant';
-    color: black;
+    color: $orangered;
 
     &:hover {
-        color: $orangered;
+        color: rgba($orangered, 0.6);
     }
 }
 
 .league {
-    color: black;
+    color: rgb(94, 124, 94);
 
     &:hover {
-        color: rgb(115, 153, 115);
+        color: rgba(115, 153, 115, 0.6);
     }
 }
 
 .benji {
     color: #9e8e78;
+    font-weight: bold;
+
+    &:hover {
+        color: rgba(#9e8e78, 0.6)
+    }
 }
 
 .outline {

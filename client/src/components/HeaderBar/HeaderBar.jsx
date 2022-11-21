@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
-import Logo from '../../assets/images/logo.png'
+import Blob from '../../assets/images/blob.svg';
+import Logo from '../../assets/images/logo4.png'
 import FlowerBorder from '../../assets/images/flowerborder.png'
 import './headerbar.scss';
 
@@ -29,9 +30,18 @@ function HeaderBar(props) {
   });
 
     return (
+      <>
+      <div className="parallax parallax0">
+          <img src={Blob} className="blob" alt="Blob"/>
+          <h1 className="new new1">andy</h1>
+              <h1 className="new new2">Nguyen</h1>
+              <h1 className="big">S</h1>
+      </div>
       <div className='headerbar'>
           <img src={Logo} className="headerbar__logo" alt="Logo"/>
+          <img src={FlowerBorder} className="flower" alt="Flowers" />
           <h2 className="headerbar__text" id="header">{props.state.headerTitle}</h2>
+          <img src={FlowerBorder} className="flower" alt="Flowers" />
           <div className="headerbar__image-container">
             <img src={FlowerBorder} className="headerbar__image blur1" alt="Flowers" />
             <img src={FlowerBorder} className="headerbar__image blur2" alt="Flowers" />
@@ -45,6 +55,7 @@ function HeaderBar(props) {
               </div>
           </div>
       </div>
+        </>
     )
 }
 

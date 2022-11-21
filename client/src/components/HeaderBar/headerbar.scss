@@ -9,18 +9,19 @@
     height: 7.5vw;
     font-size: 3vw;
     display: flex;
-    background-color: rgb(225, 231, 231);
+    background-color: rgb(195, 204, 211);
     z-index: 999;
     font-family: 'Kintanya';
     border-bottom: 0.25vw solid white;
 
     &__logo {
-        width: 8vw;
+        width: 17vw;
         margin-right: auto;
 
     }
     &__text {
         margin-right: auto;
+        padding-right: 8.5vw;
     }
     &__menu {
         width: 8vw;
@@ -40,7 +41,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            padding: 30px;           
+            padding: 1.25vw;           
 
         }
         &-line {
@@ -73,6 +74,7 @@
     &__image {
         // width: 50%;
         width: 33.3%;
+        display: none;
 
         &-container {
             position: absolute;
@@ -86,5 +88,21 @@
 
 .blur {
     opacity: 1;
+}
+
+.blob {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    margin-top: -2vw;
+    left: 20vw;
+    width: 55vw;
+    opacity: 0.3;
+}
+
+.flower {
+    width: 10vw;
+    padding: 0;
+    margin: 0;
 }
 

@@ -8,56 +8,64 @@ import Resume from '../../assets/images/resume3.png'
 import Tulip from '../../assets/images/tulip.png'
 import Arrows from '../../assets/images/2arrow.png'
 import Insta from '../../assets/images/insta.png'
-import Polaroid from '../../assets/images/rectangle-polaroid.png';
 import ContactButton from '../ContactButton/ContactButton';
 import './contact.scss';
 
 function Contact() {
 
   function showLinkedIn() {
-    $(".contact__button-logo1").css("opacity", 1);
-    $(".contact__button-logo1").css("filter", "saturation(0.5)");
+    $(".contact__button-logo1").css("opacity", 0.6);
+    $(".contact__button-text1").css("color", "#4e6f73");
   };
 
   function showEmail() {
-    $(".contact__button-logo2").css("opacity", 1);
+    $(".contact__button-logo2").css("opacity", 0.6);
+    $(".contact__button-text2").css("color", "#4e6f73");
   }
 
   function showGitHub() {
-    $(".contact__button-logo3").css("opacity", 1);
+    $(".contact__button-logo3").css("opacity", 0.6);
+    $(".contact__button-text3").css("color", "#4e6f73");
   }
 
   function showResume() {
-    $(".contact__button-logo4").css("opacity", 1);
+    $(".contact__button-logo4").css("opacity", 0.6);
+    $(".contact__button-text4").css("color", "#4e6f73");
   }
 
   function showSocialMedia() {
-    $(".contact__button-logo5").css("opacity", 1);
+    $(".contact__button-logo5").css("opacity", 0.6);
+    $(".contact__button-text5").css("color", "#4e6f73");
   }
 
   function hideLinkedIn() {
     $(".contact__button-logo1").css("opacity", 0);
     $(".contact__button1").css("filter", "grayscale(60%)");
+    $(".contact__button-text1").css("color", "black");
   };
 
   function hideEmail() {
     $(".contact__button-logo2").css("opacity", 0);
     $(".contact__button2").css("filter", "grayscale(60%)");
+    $(".contact__button-text2").css("color", "black");
   }
 
   function hideGitHub() {
     $(".contact__button-logo3").css("opacity", 0);
     $(".contact__button3").css("filter", "grayscale(60%)");
+    $(".contact__button-text3").css("color", "black");
   }
 
   function hideResume() {
     $(".contact__button-logo4").css("opacity", 0);
     $(".contact__button4").css("filter", "grayscale(60%)");
+    $(".contact__button-text4").css("color", "black");
   }
 
   function hideSocialMedia() {
     $(".contact__button-logo5").css("opacity", 0);
     $(".contact__button5").css("filter", "grayscale(60%)");
+    $(".contact__button-text5").css("color", "black");
   }
 
   return (
@@ -78,7 +86,7 @@ function Contact() {
               <ContactButton>
                 <div className="contact__button contact__button1" onMouseOver={()=>showLinkedIn()} onMouseLeave={()=>hideLinkedIn()}>
                     <img src={LinkedIn} className="contact__button-logo contact__button-logo1" alt="LinkedIn Logo" />
-                    <br/><div className="contact__button-text contact__button-text1">linkedin  </div>
+                    <br/><div className="contact__button-text contact__button-text1">linkedin</div>
                 </div>
               </ContactButton>
             </a>

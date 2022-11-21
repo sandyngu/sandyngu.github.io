@@ -3,7 +3,7 @@ import axios from 'axios';
 import Flowers from '../../assets/images/flowers3.png';
 import BrainStation from '../../assets/images/brainstation.png';
 import Typewriter from '../../assets/images/typewriter2.png';
-import Paper from '../../assets/images/paper3.png';
+import Paper from '../../assets/images/paper3a.png';
 import './comments.scss';
 
 class Comments extends React.Component {
