@@ -9,9 +9,9 @@
     height: 7.5vw;
     font-size: 3vw;
     display: flex;
-    background-color: rgb(195, 204, 211);
+    background-color: rgb(216, 221, 226);
     z-index: 999;
-    font-family: 'Kintanya';
+    font-family: 'autumn';
     border-bottom: 0.25vw solid white;
 
     &__logo {
@@ -101,8 +101,7 @@
 }
 
 .flower {
-    width: 10vw;
-    padding: 0;
-    margin: 0;
+    width: 17%;
+  height: auto;
 }
 

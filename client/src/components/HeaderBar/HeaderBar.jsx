@@ -40,9 +40,7 @@ function HeaderBar(props) {
       </div>
       <div className='headerbar'>
           <img src={Logo} className="headerbar__logo" alt="Logo"/>
-          <img src={FlowerBorder} className="flower" alt="Flowers" />
           <h2 className="headerbar__text" id="header">{props.state.headerTitle}</h2>
-          <img src={FlowerBorder} className="flower" alt="Flowers" />
           <div className="headerbar__image-container">
             <img src={FlowerBorder} className="headerbar__image blur1" alt="Flowers" />
             <img src={FlowerBorder} className="headerbar__image blur2" alt="Flowers" />
@@ -56,7 +54,7 @@ function HeaderBar(props) {
               </div>
           </div>
       </div>
-        </>
+      </>
     )
 }
 
