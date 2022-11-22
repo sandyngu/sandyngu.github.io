@@ -41,11 +41,12 @@
         // padding: 5vw 0;
 
         &--main {
-            width: 60%;
+            width: 50%;
             position: relative;
 
             &-polaroid {
                 width: 45vw;
+                height: 39vw;
                 position: relative;
                 z-index: 998;
             }
@@ -53,14 +54,14 @@
         &-hero {
             top: 1;
             margin-top: -1.7vw;
-            height: 25.75vw;
-            width: 41.25vw;
+            height: 28.5vw;
+            width: 42vw;
             left: 0;
             z-index: 996;
         }
         &-name {
             position: relative;
-            margin-top: -35.5vw;
+            margin-top: -39vw;
             z-index: 998;
             font-size: 2vw;
             font-family: 'Kintanya';
@@ -69,17 +70,15 @@
             position: absolute;
             display: flex;
             z-index: 998;
-            font-size: 0.9vw;
-            width: 55%;
+            font-size: 0.8vw;
+            width: 15vw;
+            line-height: 1.2vw;
             top: 1;
-            margin-top: 2vw;
-            right: 0;
-            left: 0;
-            margin-left: auto;
-            margin-right: auto;
+            margin-top: -27.75vw;
+            right: -19vw;
             font-family: 'Graphik';
             font-weight: bold;
-            align-items: center;
+            text-align: left;
             height: 5.5vw;
         }
         &-date {
@@ -87,8 +86,8 @@
             font-family: 'Handwriting';
             font-size: 1.5vw;
             top: 1;
-            margin-top: 8vw;
-            right: 13.5vw;
+            margin-top: -30.25vw;
+            right: -8vw;
             z-index: 998;
         }
         &-link {
@@ -97,25 +96,23 @@
         }
     }
     &__paper {
-        position: absolute;
         top: 1;
-        margin-top: 27vw;
-        width: 45vw;
-        height: 13vw;
+        width: 20vw;
+        height: 25vw;
+        margin-top: 0.5vw;
+        margin-right: 1.5vw;
         right: 0;
         left: 0;
-        margin-left: auto;
-        margin-right: auto;
         z-index: 998;
     }
     &__postit {
         position: absolute;
         width: 15vw;
         left: 0;
-        margin-left: -4vw; 
+        margin-left: 53vw; 
         filter: saturate(50%);
         top: 1;
-        margin-top: 12vw;
+        margin-top: 23vw;
         transform: rotate(345deg);
         z-index: 998;
 
@@ -125,10 +122,10 @@
             font-weight: bold;
             font-size: 1.3vw;
             top: 1;
-            margin-top: -21.5vw;
-            transform: rotate(345deg);
+            margin-top: -14vw;
+            transform: rotate(343deg);
             z-index: 998;
-            left: -2vw;
+            right: -11vw;
             text-decoration: $orangered underline;
         }
     }
@@ -137,7 +134,7 @@
         height: 3.5vw;
         opacity: 0.5;
         position: absolute;
-        right: 10vw;
+        right: 4vw;
         z-index: 998;
         top: 1;
         margin-top: 37vw;

@@ -6,7 +6,7 @@ import Flowers from '../../assets/images/flowers3.png';
 import RectanglePolaroid from '../../assets/images/rectangle-polaroid.png';
 import Dots from '../../assets/images/dots.png';
 import ProjectQueue from '../ProjectQueue/ProjectQueue';
-import Paper from '../../assets/images/paper.png';
+import Paper from '../../assets/images/paper1.png';
 import Postit from '../../assets/images/postit.png';
 import './projects.scss';
 
@@ -72,7 +72,7 @@ class Projects extends React.Component {
               <div className="projects__display">
                   <div className="projects__display--main">
                       <img src={RectanglePolaroid} className="projects__display--main-polaroid" alt="Polaroid"/>
-                      <img src={Paper} className="projects__paper" alt="Ripped Paper"/>
+                      {/* <img src={Paper} className="projects__paper" alt="Ripped Paper"/> */}
                       <img src={Postit} className="projects__postit" alt="Ripped Paper"/>
                       <div className="projects__postit-title">TechStacks</div>
                       {this.state.projects[0] &&
@@ -83,12 +83,15 @@ class Projects extends React.Component {
                           }
                           
                           <img src={this.state.heroProject.hero} className="projects__display-hero" alt="Project"/>
-                          <div className="projects__display-description">{this.state.heroProject.description}</div>  
                           <div className="projects__display-date">{this.state.heroProject.date}</div>                      
+                          <div className="projects__display-description">{this.state.heroProject.description}</div>  
                             {this.state.projects[0] &&
                                 <TechStacks heroProject={this.state.heroProject} />}
                       </>
                       }
+                  </div>
+                  <div className="projects__note">
+                      <img src={Paper} className="projects__paper" alt="Ripped Paper"/>
                   </div>
 
           {/* SIDE DISPLAY */}

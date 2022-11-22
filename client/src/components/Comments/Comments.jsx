@@ -21,18 +21,36 @@ class Comments extends React.Component {
                 comments: res.data,
                 shownComment: res.data[0]
             });
-            setInterval(() => { 
-              console.log(this.state.comments) 
-              let a = [this.state.comments]   
-              a.shift();
-              console.log(a)      
-              // this.setState({
-              //   comments: [a]
-              // })
-            }, 5000)
+        this.scrollComments();    
         })
         .catch(err => console.log(err));
       };
+
+    scrollComments = () => {
+      this.timeout = setTimeout(() => 
+          this.setState({ 
+            shownComment: this.state.comments[0] 
+          }), 0);
+      this.timeout = setTimeout(() => 
+          this.setState({ 
+            shownComment: this.state.comments[1] 
+          }), 18000);
+      this.timeout = setTimeout(() => 
+          this.setState({ 
+            shownComment: this.state.comments[2] 
+          }), 39000);
+      this.timeout = setTimeout(() => 
+          this.setState({ 
+            shownComment: this.state.comments[3] 
+          }), 54000);
+      this.timeout = setTimeout(() => 
+          this.setState({ 
+            shownComment: this.state.comments[4] 
+          }), 79000);
+        // this.timeout = setTimeout(() => 
+        // this.scrollComments, 89000);
+      clearInterval(this.timeout);
+    }
 
     render () {
 
