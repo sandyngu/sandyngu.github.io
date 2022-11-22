@@ -46,38 +46,43 @@
 
             &-polaroid {
                 width: 45vw;
-                height: 39vw;
-                position: relative;
+                height: 38.5vw;
+                position: absolute;
                 z-index: 998;
             }
         }
         &-hero {
             top: 1;
-            margin-top: -1.7vw;
+            margin-top: 3vw;
             height: 28.5vw;
-            width: 42vw;
-            left: 0;
+            width: 42.25vw;
+            margin-left: 1.5vw;
             z-index: 996;
         }
         &-name {
-            position: relative;
-            margin-top: -39vw;
+            position: absolute;
+            top: 0;
+            margin-top: 34vw;
+            left: 1vw;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
             z-index: 998;
-            font-size: 2vw;
+            font-size: 2.5vw;
             font-family: 'Kintanya';
         }
         &-description {
             position: absolute;
             display: flex;
             z-index: 998;
-            font-size: 0.8vw;
+            font-size: 0.9vw;
             width: 15vw;
             line-height: 1.2vw;
             top: 1;
-            margin-top: -27.75vw;
+            margin-top: -26.5vw;
             right: -19vw;
-            font-family: 'Graphik';
             font-weight: bold;
+            font-family: 'Graphik';
             text-align: left;
             height: 5.5vw;
         }
@@ -91,7 +96,7 @@
             z-index: 998;
         }
         &-link {
-            font-size: 2vw;
+            font-size: 2.5vw;
             color: black;
         }
     }
@@ -122,7 +127,7 @@
             font-weight: bold;
             font-size: 1.3vw;
             top: 1;
-            margin-top: -14vw;
+            margin-top: 25.25vw;
             transform: rotate(343deg);
             z-index: 998;
             right: -11vw;
