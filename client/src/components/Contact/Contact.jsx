@@ -8,6 +8,7 @@ import Resume from '../../assets/images/resume3.png'
 import Tulip from '../../assets/images/tulip.png'
 import Arrows from '../../assets/images/2arrow.png'
 import Insta from '../../assets/images/insta.png'
+import Headset from '../../assets/images/headset.png'
 import ContactButton from '../ContactButton/ContactButton';
 import './contact.scss';
 
@@ -38,6 +39,11 @@ function Contact() {
     $(".contact__button-text5").css("color", "#4e6f73");
   }
 
+  function showGaming() {
+    $(".contact__button-logo6").css("opacity", 0.6);
+    $(".contact__button-text6").css("color", "#4e6f73");
+  }
+
   function hideLinkedIn() {
     $(".contact__button-logo1").css("opacity", 0);
     $(".contact__button1").css("filter", "grayscale(60%)");
@@ -66,6 +72,12 @@ function Contact() {
     $(".contact__button-logo5").css("opacity", 0);
     $(".contact__button5").css("filter", "grayscale(60%)");
     $(".contact__button-text5").css("color", "black");
+  }
+
+  function hideGaming() {
+    $(".contact__button-logo6").css("opacity", 0);
+    $(".contact__button6").css("filter", "grayscale(60%)");
+    $(".contact__button-text6").css("color", "black");
   }
 
   return (
@@ -126,14 +138,13 @@ function Contact() {
               </ContactButton>
               {/* <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid5" alt="" onMouseOver={()=>showSocialMedia()} onMouseLeave={()=>hideSocialMedia()}/> */}
             </a>
-            <a href="https://instagram.com/sandyngu" target="_blank" rel="noreferrer" className="contact__button-link">
+            <a href="https://www.linkedin.com/in/sandyngu/" target="_blank" rel="noreferrer" className="contact__button-link">
               <ContactButton>
-                <div className="contact__button contact__button6" onMouseOver={()=>showLinkedIn()} onMouseLeave={()=>hideLinkedIn()}>
-                    <img src={Insta} className="contact__button-logo contact__button-logo6" alt="Instagram Logo" />
-                    <br/><div className="contact__button-text contact__button-text6">empty</div>
+                <div className="contact__button contact__button6" onMouseOver={()=>showGaming()} onMouseLeave={()=>hideGaming()}>
+                    <img src={Headset} className="contact__button-logo contact__button-logo6" alt="Headset" />
+                    <br/><div className="contact__button-text contact__button-text6">gaming</div>
                 </div>
               </ContactButton>
-              {/* <img src={Polaroid} className="contact__button-polaroid contact__button-polaroid5" alt="" onMouseOver={()=>showSocialMedia()} onMouseLeave={()=>hideSocialMedia()}/> */}
             </a>
         </div>
         </div>

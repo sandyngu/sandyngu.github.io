@@ -59,6 +59,13 @@
                 background-image: url('../../assets/images/social2-invert.png');
             }
         }
+        &6 {
+            background-image: url('../../assets/images/gaming.jpg');
+
+            &:hover {
+                background-image: url('../../assets/images/gaming-invert.jpg');
+            }
+        }
 
         &:hover {
             opacity: 1.2;
