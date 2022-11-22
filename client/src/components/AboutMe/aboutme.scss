@@ -19,10 +19,11 @@
         // background-image: url('../../assets/images/aot2.gif');
         background-position: 20% 30%;
         background-clip: text;
-        // color: transparent;
+        color: white;
         padding: 15vw 0 0 8vw;
         margin: 0;
         text-align: left;
+        text-shadow: -0.03vw -0.03vw 0 #000, 0.03vw -0.03vw 0 #000, -0.03vw 0.03vw 0 #000, 0.03vw 0.03vw 0 #000;
     }
     &__image {
         position: absolute;

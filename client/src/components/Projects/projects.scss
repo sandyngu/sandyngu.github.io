@@ -2,7 +2,7 @@
 
 .projects {
     height: 75vw;
-    background-color: #e9edf0;
+    background-color: $background;
     padding-bottom: 5vw;
     
     &__section {
@@ -19,7 +19,8 @@
         background-size: 43%;
         background-position: 37.75% 60%;
         background-clip: text;
-        // color: transparent;
+        color: white;
+        text-shadow: -0.03vw -0.03vw 0 #000, 0.03vw -0.03vw 0 #000, -0.03vw 0.03vw 0 #000, 0.03vw 0.03vw 0 #000;
         padding-top: 13vw;
         margin: 0;
     }

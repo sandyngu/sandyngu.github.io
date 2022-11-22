@@ -2,13 +2,15 @@
 
 .contact {
     height: 88vw;
-    background-color: #e9edf0;
+    background-color: $background;
 
     &__heading {
         background-size: 75%;
         background-position: 50% 30%;
         background-clip: text;
         margin: 0;
+        color: white;
+        text-shadow: -0.03vw -0.03vw 0 #000, 0.03vw -0.03vw 0 #000, -0.03vw 0.03vw 0 #000, 0.03vw 0.03vw 0 #000;
     }
     &__button {
         background-repeat: no-repeat;

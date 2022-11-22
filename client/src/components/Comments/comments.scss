@@ -10,7 +10,9 @@
         background-clip: text;
         margin-right: 30vw;
         padding-top: 10vw;
-        margin-top: 0;    
+        margin-top: 0;   
+        color: white;
+        text-shadow: -0.03vw -0.03vw 0 #000, 0.03vw -0.03vw 0 #000, -0.03vw 0.03vw 0 #000, 0.03vw 0.03vw 0 #000; 
     }
     &__flowers {
         width: 35%;
