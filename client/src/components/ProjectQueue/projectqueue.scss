@@ -17,10 +17,9 @@
 
     &__polaroid {
         width: 15vw;
-        height: 13vw;
+        height: 12.75vw;
         position: relative;
         z-index: 998;
-        padding-bottom: 0.7vw;
     }
 
     &__container {
@@ -34,12 +33,12 @@
         position: relative;
 
         &-thumbnail {
-            width: 14vw;
-            height: 9vw;
+            width: 13.1vw;
+            height: 8.7vw;
             position: absolute;
             top: 1;
-            margin-top: -12.75vw;
-            right: 0.5vw;
+            margin-top: -11.75vw;
+            right: 1vw;
             z-index: 996;
             
         }
@@ -47,14 +46,21 @@
         &-name {
             position: absolute;
             top:1;
-            margin-top: -3.5vw;
+            margin: -3vw auto 0 auto;
             z-index: 998;
             left: 0; 
             right: 0; 
-            margin-left: auto; 
-            margin-right: auto; 
             font-family: 'Kintanya';
             font-size: 1.5vw;
         }
+    }
+    &__heading {
+        font-size: 1.25vw;
+        font-family: 'Antically';
+        color: $fadedorange;
+        text-decoration: underline;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
     }
 }

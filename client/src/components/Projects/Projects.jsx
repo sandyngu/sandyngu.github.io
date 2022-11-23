@@ -43,7 +43,7 @@ class Projects extends React.Component {
     var scrolled=0;
    
               $(".projects__more").on("click" ,function(){
-                  scrolled=scrolled+799;
+                  scrolled=scrolled+775;
                   $(".projectqueue").animate({
                           scrollTop:  scrolled
                   });
@@ -97,9 +97,10 @@ class Projects extends React.Component {
           {/* SIDE DISPLAY */}
 
                   <div className="projectqueue">
-                      {this.state.projects.map(videoInfo => 
+                      <h3 className="projectqueue__heading">Other Projects</h3>
+                        {this.state.projects.map(videoInfo => 
                             <ProjectQueue key={videoInfo.id} id={videoInfo.id} name={videoInfo.name} description={videoInfo.description} hero={videoInfo.hero} heroProject={this.state.heroProject} updateHero={this.updateHero}/>
-                          )}
+                        )}
                   </div>
                   <div className="projects__more-container">
                       <img src={Dots} className="projects__more" alt="Ellipses"/>
