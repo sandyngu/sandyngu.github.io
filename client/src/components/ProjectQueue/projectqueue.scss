@@ -15,6 +15,16 @@
         display: none;
     }
 
+    &__heading {
+        font-size: 1.35vw;
+        font-family: 'Antically';
+        color: $fadedorange;
+        text-decoration: underline;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
     &__polaroid {
         width: 15vw;
         height: 12.75vw;
@@ -46,21 +56,12 @@
         &-name {
             position: absolute;
             top:1;
-            margin: -3vw auto 0 auto;
+            margin: -2.6vw auto 0 auto;
             z-index: 998;
             left: 0; 
             right: 0; 
             font-family: 'Kintanya';
-            font-size: 1.5vw;
+            font-size: 1.25vw;
         }
-    }
-    &__heading {
-        font-size: 1.25vw;
-        font-family: 'Antically';
-        color: $fadedorange;
-        text-decoration: underline;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
     }
 }

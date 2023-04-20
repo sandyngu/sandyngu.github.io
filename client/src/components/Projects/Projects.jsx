@@ -43,7 +43,7 @@ class Projects extends React.Component {
     var scrolled=0;
    
               $(".projects__more").on("click" ,function(){
-                  scrolled=scrolled+775;
+                  scrolled=scrolled+777;
                   $(".projectqueue").animate({
                           scrollTop:  scrolled
                   });
