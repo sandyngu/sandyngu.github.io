@@ -1,10 +1,10 @@
 import React from 'react';
 import $ from 'jquery';
 import Flowers from '../../assets/images/flowers3.png';
-import Paint from '../../assets/images/paint.png';
-import Paint2 from '../../assets/images/paint4.png';
 import Polaroid from '../../assets/images/polaroid.png';
 import Polaroid2 from '../../assets/images/rectangle-polaroid.png';
+import Me from '../../assets/images/photos/me2.jpg';
+import Us from '../../assets/images/photos/benji model4.jpg';
 import './aboutme.scss';
 
 function AboutMe() {
@@ -30,6 +30,8 @@ function AboutMe() {
           <img src={Paint2} alt="Paint" className="aboutme__image aboutme__image2"/> */}
           <h2 className="aboutme__heading">who are you?</h2>
           <div className="aboutme__section">
+              <img src={Us} className="aboutme__section-photo aboutme__section-photo1" alt="Me"/>
+              <img src={Me} className="aboutme__section-photo aboutme__section-photo2" alt="Me"/>
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid1" alt=""/>
               <img src={Polaroid2} className="aboutme__section-polaroid aboutme__section-polaroid2" alt=""/>
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid3" alt=""/>
@@ -37,7 +39,7 @@ function AboutMe() {
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid5" alt=""/>
               <p className="aboutme__text aboutme__text1"><b><span className="bold">My name is Sandy and I am primarily a registered nurse. </span></b>I graduated from university in 2015 and have been working as a nurse since then. In August 2020 to October 2020, I enrolled in the <span className="highlight bold">BrainStation Web Development</span> certificate course. I had an amazing time, learning about the webdev world and connecting with like-minded individuals who were seeking to transition their careers into tech. I have always had an interest in tech and this began for me at a very young age. <br/><br/><br/><b>During my time at the bootcamp, I was given the opportunity to work as a <span className="bold">Public Health Nurse</span></b> with my local city to aide in the <span className="red bold">COVID-19 pandemic</span> response. I took this job opportunity and although it's had its advantages, it also meant putting a pause on my full-stack career. This portfolio, along with other small projects, have been a way for me to help maintain some skills I've learned in the bootcamp─ hopefully I am successul in showcasing them.</p>
               <p className="aboutme__text aboutme__text2">Outside of work, I spend a lot of amount of time gaming on my PC. One of my accomplishments is building a PC to call my own. I'm an avid supporter of <span className="rainbow aboutme--bold">RGB</span>. 
-              <br/><br/><br/>Presently, my go-to game is <a href="https://tracker.gg/valorant/profile/riot/Chawpsticks%23123/overview" target="_blank" rel="noreferrer"><span className="valorant">Valorant</span></a>. In the recent past I was playing <span className="bold">Lost Ark</span> and <span className="bold">Hogwarts Legacy</span>. <br/><br/>I have been playing Valorant since beta (currently Dia 2) and I play Lost Ark during down times (iLvl = 1455). Before that, I wasted a lot of time playing <a href="https://na.op.gg/summoners/na/Chawpsticks" target="_blank" rel="noreferrer"><span className="league bold">League of Legends</span></a>. <br/><br/><i>Other than gaming</i>, I do enjoy spending time hanging out with loved ones, raising my <a href="https://instagram.com/benji.the.akita/" className="benji bold" target="_blank" rel="noreferrer" >American Akita named Benji</a>, and travelling.</p>
+              <br/><br/><br/>Presently, my go-to game is <a href="https://tracker.gg/valorant/profile/riot/Chawpsticks%23123/overview" target="_blank" rel="noreferrer"><span className="valorant">Valorant</span></a>. In the recent past I was playing <span className="bold">Lost Ark</span> and <span className="bold">Hogwarts Legacy</span>. <br/><br/>I have been playing Valorant since beta. Before that, I wasted a lot of time playing <a href="https://na.op.gg/summoners/na/Chawpsticks" target="_blank" rel="noreferrer"><span className="league bold">League of Legends</span></a>. <br/><br/><i>Other than gaming</i>, I do enjoy spending time hanging out with loved ones, raising my <a href="https://instagram.com/benji.the.akita/" className="benji bold" target="_blank" rel="noreferrer" >American Akita named Benji</a>, and travelling.</p>
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid6" alt=""/>
               <img src={Polaroid2} className="aboutme__section-polaroid aboutme__section-polaroid7" alt=""/>
               <img src={Polaroid2} className="aboutme__section-polaroid aboutme__section-polaroid8" alt=""/>
