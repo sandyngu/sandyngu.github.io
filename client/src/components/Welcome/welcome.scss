@@ -54,8 +54,8 @@
             position: absolute;
 
             &1 {
-                width: 24.5vw;
-                right: 50.5vw;
+                width: 23vw;
+                right: 51vw;
                 transform:rotate(-20deg);
                 margin-top: 1.5vw;
                 z-index: 997;
@@ -63,14 +63,13 @@
             &2 {
                 width: 13.5vw;
                 right: 35.5vw;
-                margin-top: 6.75vw;
+                margin-top: 6.25vw;
                 transform:rotate(20deg);
             }
             &3 {
-                width: 13.5vw;
-                left: 33vw;
-                margin-top: -1.5vw;
-                transform:rotate(-20deg);
+                width: 13.55vw;
+                left: 31.05vw;
+                margin-top: -3.25vw;
             }
         }
     }

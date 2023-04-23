@@ -113,8 +113,9 @@
                 z-index: 996;
             }
             &5 {
-                width: 15vw;
-                right: 3vw;
+                width: 12.5vw;
+                height: 18.5vw;
+                right: 4.45vw;
                 margin-top: 18vw;
                 transform: rotate(-16deg);
                 z-index:998;
@@ -128,15 +129,18 @@
             }
             &7 {
                 width: 25vw;
-                right: 52vw;
-                margin-top: 78vw;
-                transform: rotate(15deg);
+                right: 46vw;
+                margin-top: 76vw;
+                transform: rotate(-2deg);
+                z-index: 998;
             }
             &8 {
                 width: 21vw;
-                right: 66vw;
-                margin-top: 90vw;
-                transform: rotate(-5deg);
+                height: 21.5vw;
+                right: 65vw;
+                margin-top: 85vw;
+                transform: rotate(10deg);
+                z-index: 997;
             }
         }
         &-photo {
@@ -149,17 +153,52 @@
                 transform: rotate(-10deg);
             }
             &2 {
-                width: 23vw;
-                left: 67.5vw;
+                width: 24.25vw;
+                left: 66.5vw;
                 transform: rotate(20deg);
                 margin-top: 1.5vw;
                 z-index: 997;
             }
             &3 {
-                width: 18vw;
-                right: 25vw;
-                margin-top: 37vw;
+                width: 16.25vw;
+                right: 25.75vw;
+                margin-top: 17.5vw;
                 transform: rotate(10deg);
+            }
+            &4 {
+                width: 13.5vw;
+                right: 5.5vw;
+                margin-top: -15vw;
+                transform: rotate(10deg);
+            }
+            &5 {
+                width: 13.5vw;
+                height: 13vw;
+                right: 4.25vw;
+                margin-top: 19.75vw;
+                transform: rotate(-16deg);
+                z-index: 998;
+            }
+            &6 {
+                width: 13.25vw;
+                right: 81vw;
+                margin-top: 76vw;
+                transform: rotate(-10deg);
+                z-index: 998;
+            }
+            &7 {
+                width: 20vw;
+                right: 65vw;
+                margin-top: 86.5vw;
+                transform: rotate(10deg);
+                z-index: 997;
+            }
+            &8 {
+                width: 24vw;
+                right: 46.5vw;
+                margin-top: 77.5vw;
+                transform: rotate(-2deg);
+                z-index: 998;
             }
         }
     }

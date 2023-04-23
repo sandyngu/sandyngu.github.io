@@ -3,8 +3,14 @@ import $ from 'jquery';
 import Flowers from '../../assets/images/flowers3.png';
 import Polaroid from '../../assets/images/polaroid.png';
 import Polaroid2 from '../../assets/images/rectangle-polaroid.png';
-import Me from '../../assets/images/photos/me2.jpg';
+import Funko from '../../assets/images/photos/funko.jpg';
 import Us from '../../assets/images/photos/benji model4.jpg';
+import Gamer from '../../assets/images/photos/MBIN8640.JPG';
+import Covid from '../../assets/images/photos/covid.jpg';
+import PCVideo from '../../assets/images/photos/pcvid2crop.mp4';
+import Rito from '../../assets/images/photos/rito.jpg';
+import Benji from '../../assets/images/photos/benji model3.jpg'
+import PC from '../../assets/images/photos/pc.jpg'
 import './aboutme.scss';
 
 function AboutMe() {
@@ -13,6 +19,8 @@ function AboutMe() {
     let oVal = ($(window).scrollTop() / 240)
     $(".blurred").css("opacity", oVal)
   })
+
+  // document.getElementById('vid').play();
 
   return (
     <div className="section" id="aboutme">
@@ -31,7 +39,15 @@ function AboutMe() {
           <h2 className="aboutme__heading">who are you?</h2>
           <div className="aboutme__section">
               <img src={Us} className="aboutme__section-photo aboutme__section-photo1" alt="Me"/>
-              <img src={Me} className="aboutme__section-photo aboutme__section-photo2" alt="Me"/>
+              <img src={Funko} className="aboutme__section-photo aboutme__section-photo2" alt="Me"/>
+              <img src={Covid} className="aboutme__section-photo aboutme__section-photo3" alt="Me"/>
+              <img src={Gamer} className="aboutme__section-photo aboutme__section-photo4" alt="Me"/>
+              <video id="vid" autoplay='autoplay' loop muted className="aboutme__section-photo aboutme__section-photo5">
+                <source src={PCVideo} type="video/mp4"></source>
+              </video>
+              <img src={Rito} className="aboutme__section-photo aboutme__section-photo6" alt="Me"/>
+              <img src={Benji} className="aboutme__section-photo aboutme__section-photo7" alt="Me"/>
+              <img src={PC} className="aboutme__section-photo aboutme__section-photo8" alt="Me"/>
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid1" alt=""/>
               <img src={Polaroid2} className="aboutme__section-polaroid aboutme__section-polaroid2" alt=""/>
               <img src={Polaroid} className="aboutme__section-polaroid aboutme__section-polaroid3" alt=""/>
