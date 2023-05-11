@@ -76,12 +76,22 @@ app.get('/projects', (req, res) => {
     });
 });
 
+let db_config = {
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "b911971ebfbaf9",
+    password: "7bb3e434",
+    database: "heroku_807fc0f12377da7",
+    charset: "utf8",
+    port: "3306",
+    insecureAuth: true
+};
+
 let connection;
 // make connection
 if (process.env.CLEARDB_DATABASE_URL) {
   connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL);
 } else {
-  connection = mysql.createConnection(knex.development);
+  connection = mysql.createConnection(db_config);
 }
 
 if (process.env.NODE_ENV === "production") {
@@ -89,7 +99,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("../client/build"));
 
   connection.on('error', function(err) {
-    connection = mysql.createConnection(knex.development)
+    connection = mysql.createConnection(db_config)
     console.log(err.code);
   });
 }
